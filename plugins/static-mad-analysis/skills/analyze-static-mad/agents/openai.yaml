@@ -1,7 +1,7 @@
 interface:
   display_name: "Static MAD Deep Analysis"
-  short_description: "Evidence-based temporal and montage video analysis"
-  default_prompt: "Use $analyze-static-mad to analyze this static MAD with timestamped evidence and alternative interpretations."
+  short_description: "Human-like narrative and montage video analysis"
+  default_prompt: "Use $analyze-static-mad to reconstruct this static MAD's subjects, event-response chains, time-space, material treatments, and audiovisual design with timestamped evidence."
 
 policy:
   allow_implicit_invocation: true
