@@ -1,86 +1,117 @@
 # Community-informed static-MAD reading framework
 
-This reference operationalizes recurring concepts from creator retrospectives, Bilibili columns, and long-form criticism. Treat community terms as hypotheses about observable craft, not objective labels.
+Use community vocabulary as diagnostic shorthand for observable relations, never as an objective score. Timestamped evidence from the video remains primary.
 
-## Start from an editorial thesis
+## Start from the editorial thesis
 
-Ask what the editor organizes as important in the finished video:
+State what the edit organizes as important: a character, relationship, contradiction, world mechanism, emotional change, visual proposition, or combination. Test whether that subject remains visible through shot order, reactions, recurrences, music, and the ending. Do not infer it from the title alone.
 
-- concept or world mechanism;
-- character or relationship;
-- theme or message;
-- story structure and turning points;
-- scene order;
-- visual language, including composition, expression, dialogue, and pauses.
+## Diagnose arrangement as four linked dimensions
 
-State the thesis concretely. “A cool emotional video” is not a thesis; “the rival gradually becomes the protagonist's reason to continue creating” is.
+Treat **编排** as relational design, not merely shot order. Diagnose the dimensions together rather than scoring them separately.
 
-## Read “编排” as relational design
+### Subject arrangement
 
-编排 is not just shot order. It coordinates:
+- Which subject determines shot selection and order?
+- Do focalizer, dramatic subject, and thematic subject migrate deliberately or drift without a handoff?
+- Do supporting characters, group shots, empty spaces, quotations, and motifs construct the subject or compete with it?
+- Does the climax still resolve the subject established earlier?
 
-- shot selection and ordering;
-- event, reaction, and state change;
-- focalizer and viewer knowledge;
-- musical section and emotional accumulation;
-- repeated motifs and delayed answers;
-- information density and reading time.
+Use:
 
-A useful unit is **一步一回应**: after a meaningful event, show or imply what it changes. Reactions can be delayed or symbolic, but unexplained event stacking weakens causality.
+- **subject drift / 主体漂移** when the center moves without a legible transfer;
+- **subject competition / 主体竞争** when several elements simultaneously demand central status;
+- **viewpoint loss / 视角失守** when a passage ceases to organize access through its established focalizer;
+- **thesis-visibility gap / 主题识别偏差** when the video's strongest organization supports a different thesis from the one proposed.
 
-## Common narrative shapes
+### Information arrangement
 
-- **Single line**: one inner contradiction changes; growth need not be positive.
-- **Dual line**: interaction changes the relationship or both people.
-- **Multi-line convergence**: several routes or characters develop separately and meet at shared nodes.
-- **Direct/王道 tendency**: premise, development, conflict, build, climax, closure are relatively legible.
-- **Associative/abstract tendency**: motifs, contrast, and sensory logic dominate literal continuity.
+- Separate essential turning points from supporting context.
+- Compare semantic density and reading demand with available duration.
+- Ask whether deleting a shot would clarify the central relation without removing a necessary change.
+- Distinguish deliberate overload from information distributed at equal weight.
 
-“王道,” “意识流,” and similar labels are loose community shorthand. Always describe the actual mechanism.
+### Emotional arrangement
 
-## Music and emotional architecture
+- Track setup, accumulation, held tension, reversal, release, closure, and aftertaste where present.
+- Check whether tonal changes are bridged by image, sound, motif, or state change.
+- Distinguish a prepared climax from an isolated intense passage or a work held at one intensity.
 
-Useful functions include premise-sharing, trigger, conflict, accumulation, held tension/蓄势, reversal, release/爆发, closure, and aftertaste/余韵. These may align with intro, verse, pre-chorus, chorus, bridge, and outro, but the mapping is not mandatory.
+### Visual arrangement
 
-Judge song fit at several levels:
+- Track focal position, gaze, screen direction, motion vector, scale, line, shape, color mass, and shot exit/entry.
+- Ask whether adjacent shots continue, oppose, redirect, or deliberately break the viewer's visual momentum.
+- Mark **shot-handoff failure / 镜头接力失败** when strong individual shots lose coherence at their boundary.
 
-- theme and lyrics;
-- phrase and section structure;
-- energy and motion amplitude;
-- emotional direction;
-- available reading time;
-- counterpoint or deliberate mismatch.
+## Distinguish narrative distillation from source-summary compression
 
-Cutting a song can improve compression or destroy accumulation. Inspect the resulting emotional logic.
+Track three different quantities:
+
+- **event coverage**: how many source events appear;
+- **change visibility**: whether responses and state changes remain visible;
+- **shot progression**: whether later shots alter the meaning of earlier material.
+
+Use **source-summary compression / 原作缩写化** when the edit samples many events but removes the relations that make change legible. This diagnoses the finished video's internal organization; it is not a demand for source completeness or non-source-viewer accessibility.
+
+Use **relation gap / 关系缺口** instead of judging omitted material:
+
+- `response_gap`: an event has no supported registration;
+- `transition_gap`: a subject arrives at a new state without a visible bridge;
+- `causal_gap`: adjacency suggests causality that the edit does not support;
+- `motivation_gap`: an action lacks a visible trigger within the constructed passage;
+- `closure_gap`: a raised relation or contradiction receives no return.
+
+A gap may be deliberate. Test later recurrences, sound, typography, symbolism, and the ending before calling it a failure.
+
+## Read audiovisual synchronization at four levels
+
+1. **cut/event sync**: cuts answer beats, accents, words, effects, or silences;
+2. **motion/phrase sync**: speed, direction, easing, and holds answer the phrase;
+3. **section/energy sync**: visual density and scale build, suspend, release, or recede with musical structure;
+4. **emotional/semantic relation**: image and sound reinforce, complicate, counterpoint, or contradict one another.
+
+Use terms such as **local beat sync, global mismatch**, **unfulfilled climax**, **premature visual release**, or **intensity plateau** only after identifying the relevant musical and visual evidence.
+
+## Test tonal continuity and selection pressure
+
+Compare color/value, material and sharpness, optical treatment, graphic language, character register, camera behavior, motion speed, and information density. Similar color alone does not establish continuity. A deliberate register break is valid when prepared or made consequential.
+
+When the editor has abundant source material, examine selection more strictly:
+
+- Does a shot enter because it changes the subject or only because it is available?
+- Does color or action matching conceal a conflict in character, theme, world, or tone?
+- Do heterogeneous shots become acceptable only at high speed, then fail in slower passages?
+
+Useful diagnoses include **surface unity**, **tonal rupture**, **related material without an editorial relation**, and **local success, connective failure**.
+
+## Use reception as auxiliary evidence
+
+Read comments, reactions, or review discussion only after the video-body analysis. They may show what viewers actually selected as subject, emotional peak, recurring symbol, formal feature, or ambiguity.
+
+For each useful reception claim, record:
+
+`reception phenomenon -> corresponding video evidence -> what it supports -> what it cannot prove`
+
+Prefer independent, evidence-bearing observations over praise, memes, rankings, or repeated slogans. Record the date and context because later adaptation news, virality, nostalgia, and fandom discussion can displace initial reception.
+
+Reception does not prove author intent, unique meaning, technical quality, popularity-independent effectiveness, or competition suitability. Creator approval of a comment is corroboration, not exclusive interpretive authority.
 
 ## Operational glossary
 
 | Community term | Operational reading |
 |---|---|
-| 合成 | Integrating elements through space, hierarchy, light, depth, edge, and texture—not merely layering them |
-| 单张合成 | Whether one still composition works before animation is added |
-| 摄影处理 | Post/compositing treatment such as blur, glow, aberration, gradient, grain, flare, and atmosphere |
-| 手数 | Visible processing amount; separate it from semantic value |
-| 曲线 | Easing and temporal shape of movement; inspect acceleration, settling, overshoot, and stop |
-| 卡分镜 | A failure to map narrative or emotional tasks onto music and available material, not only a lack of pretty shots |
-| 出招表型 | A sequence of effects/actions with weak relational, emotional, or cinematic continuity |
-| 完整度 | Whether setup, development, accumulation, climax, and closure fulfill their local tasks |
-| 升华 | Earlier material gains a new meaning through recurrence or resolution; more effects alone do not qualify |
-| 意境 | A sustained psychological state formed by image, space, sound, pace, motif, and absence—not a synonym for beauty |
-| 狂气、爽快、压抑 | Reception words that must be translated into observable contrast, density, motion, sound, and duration |
+| 合成 | Integration through hierarchy, space, light, edge, depth, and texture—not mere stacking |
+| 单张合成 | Whether the still composition works before animation is added |
+| 摄影处理 | Blur, glow, aberration, gradient, grain, flare, atmosphere, and related post treatment |
+| 手数 | Visible processing amount, separate from semantic or structural value |
+| 曲线 | Acceleration, easing, overshoot, settling, and stop behavior |
+| 卡分镜 | Failure to assign workable visual, relational, or emotional tasks to the available music and material |
+| 出招表型 | Effects or actions accumulate without connective, emotional, or cinematic development |
+| 完整度 | Local setup, development, accumulation, climax, and closure fulfill the structure the work actually attempts |
+| 升华 | Earlier material gains a new function through recurrence, convergence, reversal, or resolution |
+| 意境 | A sustained psychological state formed by image, space, sound, pace, motif, and absence |
+| 狂气、爽快、压抑 | Reception terms to translate into observable contrast, density, motion, sound, and duration |
 
 ## Adoption rule
 
-Do not promote an observation from one creator retrospective into a universal criterion. Make a concept mandatory only when it is supported by multiple independent sources, general editing logic, or direct evidence from the analyzed work. Keep author-specific practices as optional prompts, never completion requirements.
-
-## Research provenance
-
-The framework synthesizes, without treating any author as definitive:
-
-- creator essays on theme selection, information density, and music-form structure;
-- creator retrospectives on global motif/color systems, repeated-shot reappraisal, processing density, and relational-role change;
-- Chinese static-MAD criticism on storyboard reconstruction, abstract-to-concrete expression, multi-route convergence, and accumulation/release;
-- Bilibili columns on narrative core, single/dual/multi-line structures, 一步一回应, composition, motion curves, and music-fit failures;
-- creator notes and sustained criticism of individual works.
-
-These materials inform questions and vocabulary. Timestamped evidence from the analyzed video remains authoritative.
+Do not turn one reviewer, creator, comment, or contest result into a universal criterion. Promote a concept only when supported by multiple independent observations, general editing logic, or direct evidence from the analyzed work. Keep community language explanatory rather than evaluative.

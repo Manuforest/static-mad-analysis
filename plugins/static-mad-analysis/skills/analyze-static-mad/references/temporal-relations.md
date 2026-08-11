@@ -28,30 +28,6 @@ Classify relations before constructing a story. More than one relation may opera
 | `deliberate_gap` | Is a missing link itself meaningful? | withheld reaction, abrupt silence, unexplained absence later resolved |
 | `uncertain` | Do several relations remain plausible? | missing anchors or contradictory evidence |
 
-## Event-response-state chains
-
-Use the smallest meaningful causal unit:
-
-`event -> response -> state change -> consequence`
-
-- **Event**: something changes or becomes known.
-- **Response**: a person, relationship, space, sound, text, or motif registers it.
-- **State change**: desire, knowledge, affiliation, agency, danger, or emotional orientation changes.
-- **Consequence**: the new state constrains the next event.
-
-The response may be delayed, displaced onto another image, or withheld. Never invent a psychological response solely to make the story smooth.
-
-## Narrative topology
-
-- `single_thread_transformation`: one subject's contradiction changes across the work.
-- `dual_thread_relation`: interaction changes one or both subjects; the relation is the main unit.
-- `multi_thread_convergence`: separate lines develop and meet at common musical or thematic nodes.
-- `episodic_accumulation`: variations accumulate a proposition without strong causal continuity.
-- `fragmented_association`: meaning emerges from motifs and contrast more than reconstructed plot.
-- `hybrid`: specify which topology dominates each chapter.
-
-For multi-thread works, track when lines alternate, echo, cross, or finally share a frame, phrase, object, or consequence.
-
 ## Six clocks
 
 Maintain these independently:
