@@ -2,41 +2,53 @@
 
 Review this list before final interpretation.
 
-## Failure modes
+## Evidence and video-understanding failures
 
-- Language-prior bypass: inferring the source plot from title, synopsis, or familiarity instead of video evidence.
-- Uniform-sampling blindness: missing brief inserts, action order, text, or match cuts.
-- Identity drift: renaming or merging characters after style, crop, age, polarity, or location changes.
-- Event multiplication: treating graphic variants of one memory as new events.
-- Chronology collapse: assuming adjacent shots share physical time and space.
-- Salience/focalizer confusion: calling the largest face the viewpoint subject.
-- Audio reduction: equating every beat-synchronous cut with narrative synchronization.
-- Effect intentionality bias: assuming every repeated effect has deep meaning.
-- Single-story lock-in: producing one fluent explanation before testing alternatives.
-- Evidence laundering: using external source knowledge and presenting it as visually inferred.
-- Contact-sheet overreach: inferring motion or order from widely spaced thumbnails.
+- **Language-prior bypass**: infer source plot from title, synopsis, or familiarity instead of video evidence.
+- **Uniform-sampling blindness**: miss inserts, action order, text, or match cuts.
+- **Identity drift**: merge or rename characters after crop, age, style, polarity, or costume changes.
+- **Event multiplication**: treat variants of one source image or memory as separate events.
+- **Chronology collapse**: assume adjacent shots share physical time and space.
+- **Salience/focalizer confusion**: equate the largest face with the viewpoint subject.
+- **Contact-sheet overreach**: infer motion or order from widely spaced thumbnails.
+- **VLM continuity hallucination**: smooth cuts, crop changes, and layer animation into physical character action.
+- **Single-story lock-in**: write one fluent explanation before testing alternatives.
+- **Evidence laundering**: present source knowledge or creator notes as visually inferred.
 
-## Research-derived design principles
+## Cross-type interpretation failures
 
-- Use coarse-to-fine temporal search and adaptive frame selection rather than uniform sparse sampling.
-- Decompose event parsing, grounding, memory, and reasoning instead of asking for one-pass narration.
-- Require timestamped visual grounding for claims.
-- Maintain explicit long-video memory for entities and events.
-- Treat editing recognition, reasoning, and judgment as distinct tasks.
-- Integrate vision, audio, and language at event boundaries.
-- Re-probe initial temporal answers for consistency.
+- **Event-only summary**: list incidents without reactions, state changes, or consequences.
+- **Adapter-by-label**: select rules from the upload title or community tag instead of observable media behavior.
+- **Role collapse**: treat visual subject, action subject, focalizer, dramatic subject, thematic subject, speaker, and discourse subject as one person.
+- **Source/edit causality collapse**: attribute a relation created by juxtaposition to the original scene, or vice versa.
+- **Speech ownership collapse**: assume the visible person speaks, endorses, hears, or is addressed by a quoted line.
+- **Author-intent absolutism**: treat a creator statement as the only valid observable effect.
+- **Original-context omission**: avoid the source so completely that character identity, route structure, source chronology, or editorial transformation cannot be recognized.
+- **Original-work comparison creep**: turn source context into fidelity, completeness, omitted-information, non-source-viewer readability, canon-correctness, or competition judgment instead of analyzing transformation.
+- **Context-layer collapse**: present source facts or creator explanations as if they were established by the blind video pass.
+- **Fixed-symbol dictionary**: decide that one color/object always means one concept without tracking change.
+- **Effect intentionality bias**: assume every repeated effect carries deep meaning.
+- **Motion provenance blindness**: confuse depicted action, source-footage motion, retiming, crop motion, layer motion, and transition motion.
+- **Motion worship**: reward constant movement and overlook meaningful holds or readable stillness.
+- **Craft-proxy bias**: use layer count, software, 3D, rendering cost, or visible effort as quality.
+- **Template overfit**: impose intro/verse/pre-chorus/chorus functions on a work that uses another structure.
+- **Surface-style imitation**: confuse copied gradients, shadows, typography, or transitions with an authored visual language.
+- **Music reduction**: equate beat synchronization with narrative or emotional fit.
+- **Rhetoric without operation**: use “狂气,” “高级,” “爽,” “意识流,” or “有意境” without observable evidence.
 
-Representative sources:
+## Research-derived workflow principles
 
-- TimeChat, CVPR 2024: timestamp-aware long-video understanding.
-- Koala, CVPR 2024: key-frame-conditioned long-video models.
-- MoReVQA, CVPR 2024: modular event parsing, grounding, memory, and reasoning.
-- NExT-GQA, CVPR 2024: visually grounded video answers.
-- MA-LMM, CVPR 2024 and ReWind, CVPR 2025: memory for long video.
-- Re-thinking Temporal Search, CVPR 2025: query-aware coarse-to-fine search.
-- VEU-Bench, CVPR 2025: recognition, reasoning, and judgment of editing.
-- LongVALE, CVPR 2025: time-aware vision-audio-language events.
-- LongVT, CVPR 2026: tool-using agents that browse then revisit video.
-- NarrativeTrack, 2026: entity consistency across narrative transitions.
+- Use coarse-to-fine temporal search and adaptive sampling.
+- Decompose event parsing, grounding, memory, interpretation, and judgment.
+- Require timestamped visual evidence and explicit long-video entity memory.
+- Keep editing recognition, reasoning, creator intent, and evaluation separate.
+- Use one subject-centered core, then apply only media-specific adapters supported by the inspected interval.
+- Return adapter findings to the shared subject, event, time-space, sound, and interpretation records.
+- Integrate vision, audio, language, and viewer disclosure at event boundaries.
+- Re-probe important temporal answers for consistency.
+- Track event-response-state chains and multi-line convergence.
+- Analyze visible material treatment without assuming knowledge of its original arrangement.
+- Treat global motifs, processing density, and repeated shots as evolving systems.
+- Explain craft as mechanisms and effects rather than one scalar.
 
-These principles guide workflow design; this skill does not reproduce the papers' learned architectures or benchmark claims.
+Representative research includes TimeChat, Koala, MoReVQA, NExT-GQA, MA-LMM, ReWind, Re-thinking Temporal Search, VEU-Bench, LongVALE, LongVT, and NarrativeTrack. Community-informed principles come from creator retrospectives, Bilibili columns, and Chinese/Japanese criticism. These sources guide the workflow; they do not replace inspection of the video.
