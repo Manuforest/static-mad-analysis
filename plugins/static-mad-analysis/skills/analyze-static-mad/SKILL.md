@@ -1,68 +1,64 @@
 ---
 name: analyze-static-mad
-description: Analyze static-image MAD/AMV/MV videos through human-like repeated viewing, adaptive frame sampling, subject and focalizer tracking, event-response narrative reconstruction, material-treatment analysis, montage grammar, music-form alignment, and evidence-calibrated craft interpretation. Use when Codex is asked to watch, interpret, explain, compare, review, or technically analyze a 静止系MAD, 静止画MAD, manga MAD, Galgame MAD, image-based AMV, edited MV, or another highly edited video in which still images, typography, compositing, motifs, flash cuts, or non-linear chronology carry meaning.
+description: Analyze static-image MADs through a shared subject-centered video-understanding core and a mature static-MAD adapter, with provisional AMV and ASMV extensions for explicitly requested experiments. Use when Codex is asked to watch, interpret, explain, compare, review, or technically analyze a 静止系MAD, 静止画MAD, manga MAD, Galgame MAD, image-based AMV, or—on an explicitly provisional basis—a footage-based AMV, ASMV, edited MV, or hybrid fan edit.
 ---
 
-# Analyze Static MAD
+# Analyze Edited Video
 
-Treat the work as an authored audiovisual construction, not a sequence of frame captions. Reconstruct how events, reactions, music, visual systems, and editing relations cooperate to produce meaning. Preserve ambiguity when the evidence does not determine one reading.
+Reconstruct the work as an authored audiovisual system. Use one shared understanding core for subjects, events, time-space, sound, and evidence. Treat static-MAD analysis as the current supported path; treat AMV and ASMV handling as provisional extensions whose concepts and coverage may change.
 
-## Read the supporting guidance
+## Select the analysis route
 
 Always read:
 
-- [temporal-relations.md](references/temporal-relations.md) for time-space, event-response, and narrative-topology analysis;
+- [core-understanding.md](references/core-understanding.md) for the common reasoning model;
 - [evidence-schema.md](references/evidence-schema.md) for auditable records;
-- [community-reading-framework.md](references/community-reading-framework.md) for static-MAD terminology and interpretation logic;
+- [temporal-relations.md](references/temporal-relations.md) for relation classification;
 - [failure-modes.md](references/failure-modes.md) before finalizing.
 
-Read [montage-grammar.md](references/montage-grammar.md) when the work uses symbolic inserts, repeated images, fabricated composites, typography, graphic matches, intensive compositing, or screen-within-screen arrangements.
+Then select adapters from observable media behavior, not the upload title or community tag:
 
-Read [craft-analysis.md](references/craft-analysis.md) only when the user requests critique, comparison, technique analysis, or improvement advice.
+- **Static MAD / image-based edit — supported**: read [type-static-mad.md](references/type-static-mad.md). Use when still images, manga panels, sprites, typography, crops, masks, compositing, or fabricated camera motion carry the action.
+- **AMV / footage-based edit — provisional extension**: read [type-amv.md](references/type-amv.md) only when the user explicitly requests AMV analysis or asks to experiment with the shared core beyond static MAD. Use its concepts as hypotheses, not settled requirements.
+- **ASMV / dialogue-led edit — provisional extension**: read [type-asmv.md](references/type-asmv.md) only when the user explicitly requests ASMV analysis or asks to experiment with dialogue-led edits. Use its concepts as hypotheses, not settled requirements.
 
-## Epistemic layers
+For a hybrid work, use the smallest adapter set authorized by the request. Tag important claims with the operative mechanism, such as `static_constructed_motion`, `source_footage_action`, `edit_created_relation`, or `recontextualized_speech`. Label every AMV/ASMV adapter finding `provisional_extension`; do not present its terminology or completion checks as a mature standard.
 
-Keep these layers visibly separate throughout the analysis:
+Read [montage-grammar.md](references/montage-grammar.md) when symbolic inserts, repeated images, fabricated composites, typography, graphic matches, intensive compositing, or screens-within-screens materially shape meaning.
 
-1. **Observation** — directly visible or audible evidence.
-2. **Video-grounded inference** — an explanation supported by adjacent shots or recurring structures.
-3. **External context** — information obtained outside the video; use only when the user explicitly requests contextual comparison or it is necessary for the named task.
-4. **Documented author intent** — a claim explicitly made in creator notes, interviews, or project commentary.
+Read [craft-analysis.md](references/craft-analysis.md) only when the user requests technique analysis, critique, comparison, or improvement advice. Read [community-reading-framework.md](references/community-reading-framework.md) only for static-MAD community vocabulary and interpretation prompts.
 
-Never rewrite layers 3 or 4 as though they were discovered from the video alone.
-
-## Non-negotiable constraints
+## Shared constraints
 
 - Do not infer plot, identity, intention, or physical motion from an isolated frame.
-- Do not equate playback order with story chronology.
-- Complete a blind pass before consulting a source synopsis or creator explanation.
-- Require multiple identity anchors; mark uncertain names and roles provisional.
-- Treat recolors, crops, masks, and repeats as possible transformations of one source image rather than new events.
-- Do not force symbolic or graphic relations into literal time-space.
-- Do not treat lyrics as dialogue without explicit attribution.
-- Do not assume more motion, effects, layers, or cuts mean better craft.
-- Ground major claims in timestamped context before and after the relevant shot.
-- Maintain alternatives and counterevidence instead of polishing uncertainty away.
+- Do not equate playback order, source-scene order, and reconstructed story chronology.
+- Complete a blind pass before consulting source summaries or creator explanations.
+- Require multiple identity anchors; keep uncertain roles provisional.
+- Do not force a protagonist. The thematic subject may be a relationship, group, place, emotion, institution, abstract force, or musical proposition.
+- Treat lyrics and quoted dialogue as authored audio material, not automatically as literal speech by the visible person.
+- Ground major claims in timestamped context before and after the relevant moment.
+- Maintain alternative explanations and counterevidence.
+- Keep observation, video-grounded inference, external context, and documented author intent separate.
 
 ## Workflow
 
-### 1. Establish the analysis surface
+### 1. Establish and classify the analysis surface
 
 Prefer a local video supplied or authorized by the user. For a URL, use an available browser or connector only within the authorized session. Never expose cookies, tokens, or account data.
 
-Record media metadata, title, credited creator, duration, frame rate, resolution, audio, subtitles or lyrics, and the availability of creator notes. Do not consult creator statements or original-work summaries unless the user requests that context; if used, wait until the blind pass is complete.
+Record metadata, title, credits, duration, frame rate, resolution, audio, subtitles or lyrics, and available creator notes. Make a type map by interval: still-image construction, continuous footage, dialogue-led construction, or hybrid. Revise the map after inspection. Type detection does not itself authorize the provisional AMV/ASMV extensions.
 
 Store artifacts in a user-approved output directory without overwriting the source.
 
 ### 2. Prepare deterministic evidence
 
-Run `scripts/prepare_analysis.py` for the initial pass:
+Run the bundled preparation workflow:
 
 ```powershell
 & $python scripts/prepare_analysis.py $video --output-dir $analysisDir --focus 80:100:8
 ```
 
-The output includes media metadata, candidate cuts, overview frames, dense focus frames, contact sheets, an audio profile, and empty evidence records. Scene detection is an attention cue, not ground truth: flashes may create false cuts and dissolves may hide semantic boundaries.
+This produces metadata, candidate cuts, overview and focus frames, contact sheets, an audio profile, and evidence records. Scene detection is an attention cue, not ground truth.
 
 If Python is unavailable, use a bundled workspace Python. Resolve FFmpeg through an explicit argument, `STATIC_MAD_FFMPEG` / `STATIC_MAD_FFPROBE`, or `PATH`; do not assume a machine-specific location.
 
@@ -70,136 +66,79 @@ If Python is unavailable, use a bundled workspace Python. Resolve FFmpeg through
 
 Use a VLM only as a fallible second observer. Read [qwen-vl.md](references/qwen-vl.md) before a Qwen upload and [vlm-prompt.md](references/vlm-prompt.md) before prompting any VLM. External upload requires user authorization and the user's own environment-provided key.
 
-Always estimate cost first:
+Estimate cost first:
 
 ```powershell
 & $python scripts/call_qwen_vl.py $video --prompt-file $prompt --fps 1 --dry-run
 ```
 
-Use a low-density whole-video pass for provisional chapters and OCR, then increase density only on short uncertain intervals. Verify all claimed gestures, gazes, actions, and spatial continuities against adjacent local frames and cut boundaries.
+Use a low-density whole-video pass for provisional chapters and OCR, then increase density only on uncertain intervals. Verify claimed gestures, gazes, actions, speakers, and spatial continuities against local frames, audio, and cut boundaries.
 
-### 3. Perform a blind global pass
+### 3. Run the shared understanding core
 
-Inspect the overview chronologically without source-plot material. Record:
+Follow [core-understanding.md](references/core-understanding.md):
 
-- dominant visual systems and provisional chapter boundaries;
-- emotional and musical energy curves;
-- recurring people, objects, body fragments, colors, text, interfaces, and spaces;
-- possible focal characters and unresolved identity conflicts;
-- apparent changes in information density and processing density;
-- questions the edit creates and later answers.
+1. perform a blind global pass;
+2. segment functional chapters;
+3. establish entities, subject roles, focalization, and—when speech leads—discourse roles;
+4. build event-response-state-consequence chains;
+5. classify shot relations and reconstruct the six clocks;
+6. align image, motion, sound, music, and viewer disclosure;
+7. generate and falsify at least two interpretations.
 
-Use labels such as `person_a` and `object_b`. Do not write a complete plot yet.
+Do not write a polished plot before these records exist.
 
-### 4. Segment chapters by function
+### 4. Apply the selected adapter
 
-Combine candidate cuts with changes in meaning and musical form. A boundary becomes stronger when at least two signals change: focalizer, dramatic question, location logic, color/light, typography, motif behavior, edit density, music phrase, instrumentation, energy, or lyrical function.
+Use each adapter to answer what the common core cannot decide by itself:
 
-Give each chapter a task such as premise-sharing, trigger, development, conflict, accumulation, reversal, release, closure, or aftertaste. Do not force the familiar verse-to-chorus arc when the work deliberately inverts it.
+- static adapter: distinguish depicted action from crop/layer/mask/typography motion and inspect material reconstruction;
+- AMV adapter: distinguish source-scene continuity from relations newly created by selection, omission, juxtaposition, and music;
+- ASMV adapter: distinguish speaker, addressee, visible subject, assigned narrator, and the edit's overall discourse position.
 
-### 5. Establish subjects, entities, and focalization
+Return adapter findings to the shared model: they must clarify subject roles, event chains, time-space, sound-image relations, or the editorial thesis. Do not maintain a separate type-specific story.
 
-Track identity with face, clothing, accessory, pose, screen direction, associated object, interaction partner, and adjacent action. Distinguish:
+### 5. Revisit uncertain intervals adaptively
 
-1. visual subject — highest frame salience;
-2. shot subject — what composition and camera treatment organize;
-3. action subject — who initiates a change;
-4. focalizer — whose seeing, knowing, memory, or uncertainty structures the sequence;
-5. dramatic subject — whose state changes;
-6. thematic subject — the relationship, idea, person, or force under examination.
+Increase sampling where identity, action phase, gaze, brief text, speaker attribution, source-scene boundaries, repeated imagery, flash inserts, or audio-visual relations are unstable. Use roughly 4 fps for ordinary inspection, 8–12 fps for dense editing, and original frame rate near suspected inserts or match cuts.
 
-Allow these roles to diverge and shift.
+Partition a dense interval into shots before narrating it. Record whether visible change is produced by source action, camera/crop, layers/masks, typography, transition, or remains uncertain.
 
-### 6. Build event-response-state chains
+### 6. Recover and test the editorial thesis
 
-For each narratively important event, inspect what follows. Record:
+Propose two or three answers to: **what relationship, contradiction, state change, discourse, or idea does this edit organize as important?** Test each across chapters, recurrences, music, sound, and endings. Prefer the account that explains more repeated structures with fewer unsupported assumptions.
 
-`event -> subject response -> state or relationship change -> next consequence`
+### 7. Add external context only when requested
 
-A response may be facial, gestural, spatial, typographic, musical, symbolic, or an intentional absence. If the edit jumps from incident to incident without showing or implying response, mark a possible causal gap rather than inventing one.
+Consult original works, lyrics, creator notes, interviews, or project commentary only after the blind analysis and only when the task calls for them. Report whether each item confirms, weakens, corrects, or merely inspires the video-grounded reading.
 
-Classify the broader topology as single-thread transformation, dual-thread relational development, multi-thread convergence, episodic accumulation, or deliberately fragmented/associative construction. Use [temporal-relations.md](references/temporal-relations.md).
+### 8. Explain craft through effects
 
-### 7. Reconstruct time and space
+When requested, follow [craft-analysis.md](references/craft-analysis.md):
 
-Classify meaningful shot relations before constructing chronology. Test physical continuity against ellipsis, flashback, anticipation, viewpoint change, repeated memory, fantasy, screen mediation, graphic match, symbolic association, contrast, and sound bridge.
+`timestamped evidence -> operation -> perceptual or narrative effect -> limitation or plausible alternative`
 
-Maintain playback, shot, story, subjective, music, and viewer-disclosure time separately. For important transitions, inspect the preceding shot, transition frames, following shot, and later recurrence.
+Do not infer effectiveness from popularity, software complexity, source prestige, layer count, or effect count. Give revision advice only when requested.
 
-### 8. Revisit uncertain intervals adaptively
+### 9. Report in layers
 
-Increase sampling when identity is unstable, a hand or gaze may continue across a cut, text is brief, a frame repeats with altered treatment, a flash may hide an insert, a motif returns, audio and visual boundaries disagree, or the proposed relation has low confidence.
-
-Use roughly 4 fps for normal inspection, 8–12 fps for dense editing, and original frame rate near suspected inserts or match cuts. Partition a dense interval into shots before narrating it. Label visible change as `diegetic_subject_motion`, `camera_or_crop_motion`, `layer_or_mask_motion`, `typography_motion`, `transition`, or `uncertain`.
-
-### 9. Recover the editorial thesis and material logic
-
-Infer two or three provisional answers to: **what relationship, contradiction, state change, or idea does this edit organize as important?** Test them against the whole work.
-
-Record visible material treatment as selection/crop, separation/redraw, compositing/reconstruction, fabricated composite, external asset, treatment-only, or uncertain. Do not infer fidelity to, deviation from, or completeness relative to the original work unless the user explicitly asks for an original-work comparison and supplies or authorizes appropriate context.
-
-### 10. Analyze montage and global expression systems
-
-Use [montage-grammar.md](references/montage-grammar.md). Read adjacency as syntax and track systems across the entire work:
-
-- recurring colors, objects, borders, line treatments, text modes, screens, or spaces;
-- how their meaning changes rather than assigning a fixed symbol dictionary;
-- how a repeated source image is recontextualized;
-- whether processing density distinguishes past/present, intimacy/distance, control/disorder, or another state;
-- whether effects serve revelation, concealment, fragmentation, contamination, transition, or decoration.
-
-Inspect the base composition before praising animation. Separate single-frame hierarchy from what movement adds.
-
-### 11. Align music, motion, and reading time
-
-Distinguish beat, phrase, energy, lyric-semantic, structural, and contrapuntal alignment. For each major passage, ask:
-
-- what narrative task the musical section performs;
-- whether motion amplitude and easing fit the musical and emotional state;
-- whether a hold allows expression or text to be read;
-- whether cutting the song damages accumulation or release;
-- whether dynamic/static contrast creates emphasis;
-- whether visual-change density and semantic density diverge.
-
-A beat-synchronous cut is not automatically a narrative beat.
-
-### 12. Generate and falsify interpretations
-
-Produce at least two candidate interpretations. Each must include a claim, timestamped support, counterevidence, alternative explanation, confidence, and a useful interval to revisit. Prefer the explanation that accounts for more repeated structures with fewer unsupported assumptions.
-
-### 13. Add external context only when requested
-
-If the user requests comparison with the original work, lyrics, creator notes, interviews, or project commentary, consult them only after the blind analysis. Record whether each external item confirms, weakens, corrects, or merely inspires the video-grounded reading.
-
-Do not treat creator intent as the only valid audience experience. Report meaningful gaps between observable effect, plausible interpretation, and documented intention.
-
-### 14. Explain craft through effects
-
-When critique or technique analysis is requested, use [craft-analysis.md](references/craft-analysis.md). Explain each important choice as `evidence -> operation -> perceptual or narrative effect -> limitation/alternative`. Analyze narrative organization, emotion, subject/focalization, composition, animation, compositing, music/edit structure, visual design, atmosphere, and finish as interacting mechanisms rather than isolated checkboxes.
-
-Do not infer effectiveness from popularity, software complexity, layer count, or the number of effects. Give improvement advice only when requested, and tie it to timestamped evidence and the work's own apparent aims.
-
-### 15. Report in layers
-
-Use [report-template.md](assets/report-template.md) when a detailed report is requested. Lead with the main interpretation and confidence, then present the observable timeline, event-response chains, focalization, time-space reconstruction, material treatment, expression systems, music/motion design, alternatives, optional external-context revisions, and craft analysis.
-
-Use timestamps and representative frames wherever they materially support the argument.
+Use [report-template.md](assets/report-template.md) for a detailed report. Lead with the main interpretation and confidence, then show the observable timeline, subject map, event chains, time-space, audiovisual organization, adapter-specific findings, alternatives, and optional external-context revision.
 
 ## Completion gate
 
 Before finalizing, verify that:
 
-- identities and focalizer claims use multiple anchors and shot chains;
-- key events include their reactions or an explicit note that the reaction is absent;
-- narrative topology and major state changes are stated;
+- a type map was inferred from the media, the static adapter was used normally, and provisional adapters were loaded only when explicitly requested;
+- identities, focalizers, and speakers use multiple anchors;
+- visual, action, focal, dramatic, thematic, and discourse roles are not collapsed;
+- key events include reactions and state changes or explicitly mark their absence;
+- provisional AMV/ASMV findings are labeled as extensions rather than mature universal rules;
+- source-scene causality is distinguished from edit-created relation when the AMV extension is used;
+- depicted motion is distinguished from constructed motion where still material is used;
+- quoted speech is distinguished from the edit's discourse position when the ASMV extension is used;
 - reality, memory, fantasy, symbolism, and playback order are not collapsed;
-- recurring motifs are compared across appearances rather than decoded once;
-- material treatment is described without unsupported claims about the original work;
-- music sections, holds, motion amplitude, and reading time are considered;
-- dense passages received denser inspection;
-- VLM motion claims were locally verified;
-- every external upload passed authorization and cost gating;
+- music sections, sound bridges, holds, motion amplitude, and reading time are considered;
+- dense passages received denser inspection and VLM motion claims were locally verified;
 - the leading interpretation includes counterevidence;
-- author intent and source knowledge remain separate from blind evidence;
-- craft commentary explains how choices function instead of assigning category fitness;
-- important claims are labeled observation, video-grounded inference, external context, or documented author intent.
+- external context and author intent remain separate from blind evidence;
+- craft commentary explains mechanisms and effects through timestamped evidence.

@@ -2,6 +2,20 @@
 
 Use structured records when practical. Keep observation, inference, external context, and creator intent auditable.
 
+## Type map
+
+```json
+{
+  "times": [0.0, 32.0],
+  "adapters": ["static_mad", "asmv"],
+  "adapter_status": {"static_mad": "supported", "asmv": "provisional_extension"},
+  "evidence": ["layered still images", "voice bridges organize chapter changes"],
+  "confidence": 0.86
+}
+```
+
+Classify by observable media behavior. A work may change type by interval.
+
 ## Evidence levels
 
 - `observation`: directly visible or audible;
@@ -34,10 +48,25 @@ Use structured records when practical. Keep observation, inference, external con
     {"type": "relation", "value": "framed by REC interface", "times": [43.0]}
   ],
   "roles_by_interval": [
-    {"times": [41.0, 48.0], "roles": ["visual_subject", "focalizer"]}
+    {"times": [41.0, 48.0], "roles": ["visual_subject", "focalizer", "dramatic_subject"]}
   ],
   "confidence": 0.72,
   "conflicts": []
+}
+```
+
+When speech leads, add discourse roles separately:
+
+```json
+{
+  "times": [41.0, 48.0],
+  "original_speaker": "person_b",
+  "visible_subject": "person_a",
+  "assigned_narrator": "uncertain",
+  "discourse_subject": "the pair's shared fear of being remembered",
+  "implied_addressee": "person_a",
+  "editorial_position": "the quotation is reframed as a mutual rather than private fear",
+  "confidence": 0.61
 }
 ```
 
@@ -95,6 +124,22 @@ Use structured records when practical. Keep observation, inference, external con
   "confidence": 0.66
 }
 ```
+
+## Motion provenance
+
+```json
+{
+  "times": [70.0, 72.0],
+  "mechanism": "static_constructed_motion",
+  "motion_class": "camera_or_crop_motion",
+  "observation": "The crop moves from the hand to the face.",
+  "function": "The edit redirects attention from action to response.",
+  "literal_character_motion_claimed": false,
+  "confidence": 0.91
+}
+```
+
+For footage-based edits, use `source_footage_action`, `retimed_source_motion`, or `edit_created_relation` as appropriate.
 
 ## Expression system
 

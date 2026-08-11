@@ -1,4 +1,4 @@
-# Static-MAD craft analysis
+# Edited-video craft analysis
 
 Use this only when the user requests critique, comparison, technique analysis, or improvement advice. Interpret the work before discussing craft.
 
@@ -18,6 +18,8 @@ Describe effects relative to the work's own observable organization. Use the len
 | Narrative organization | Are events followed by reactions and state changes? How are causal gaps, repetition, and convergence used? |
 | Emotional construction | How do duration, expression, juxtaposition, sound, and recurrence accumulate or redirect emotion? |
 | Subject/focalization | How do visual subject, action subject, focalizer, and dramatic subject align or diverge? |
+| Discourse organization | When speech leads, how do speaker, visible subject, assigned narrator, addressee, and editorial position align or diverge? |
+| Source/edit relation | For footage, which continuities and reactions belong to the selected scene, and which relations are newly created by the edit? |
 | Material preparation | How do crop, separation, redraw, restoration, edge, resolution, and texture affect the image? |
 | Single-frame composition | How do hierarchy, negative space, direction, scale, text, and motif placement guide attention? |
 | Still-image animation | What do parallax, camera, easing, internal motion, focus, and light add beyond the still composition? |
@@ -34,5 +36,6 @@ Describe effects relative to the work's own observable organization. Use the len
 - Lead with mechanisms and effects, not adjectives.
 - Translate words such as “爽快,” “压抑,” “高级,” or “有意境” into observable duration, contrast, density, motion, sound, and composition.
 - Distinguish visual-change density, processing density, semantic density, and reading demand.
+- Name the operative mechanism: source action, constructed motion, retiming, juxtaposition, sound bridge, or recontextualized speech.
 - Explain a limitation only when evidence shows what meaning, rhythm, clarity, or comfort it disrupts.
 - When suggesting a revision, preserve the work's apparent aim and identify the smallest change that would clarify or strengthen it.

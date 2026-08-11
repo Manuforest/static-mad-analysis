@@ -1,7 +1,7 @@
 interface:
-  display_name: "Static MAD Deep Analysis"
-  short_description: "Human-like narrative and montage video analysis"
-  default_prompt: "Use $analyze-static-mad to reconstruct this static MAD's subjects, event-response chains, time-space, material treatments, and audiovisual design with timestamped evidence."
+  display_name: "Subject-Centered MAD Analysis"
+  short_description: "Static-MAD analysis with provisional AMV and ASMV extensions"
+  default_prompt: "Use $analyze-static-mad to apply the subject-centered core and supported static-MAD adapter with timestamped evidence; use the provisional AMV or ASMV extensions only if I explicitly request them."
 
 policy:
   allow_implicit_invocation: true

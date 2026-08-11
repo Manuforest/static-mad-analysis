@@ -1,7 +1,7 @@
 {
   "name": "static-mad-analysis",
-  "version": "0.1.0",
-  "description": "Evidence-first analysis of static-image MAD, manga MAD, AMV, and highly edited narrative video.",
+  "version": "0.2.0",
+  "description": "Subject-centered static-MAD analysis through a shared core, with provisional AMV and ASMV extensions.",
   "author": {
     "name": "Manuforest",
     "url": "https://github.com/Manuforest"
@@ -12,17 +12,17 @@
   "keywords": ["video-analysis", "static-mad", "amv", "montage", "multimodal", "qwen-vl"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Static MAD Analysis",
-    "shortDescription": "Evidence-based temporal and montage analysis for static-image video.",
-    "longDescription": "Analyze static-image MAD, manga MAD, AMV, and other highly edited narrative videos through adaptive sampling, subject tracking, time-space reconstruction, montage grammar, audio profiling, and optional cost-gated Qwen video understanding.",
+    "displayName": "Subject-Centered MAD Analysis",
+    "shortDescription": "Static-MAD analysis with provisional AMV and ASMV extensions.",
+    "longDescription": "Analyze static MAD through adaptive sampling, subject-role tracking, event-response chains, time-space reconstruction, audiovisual organization, and optional cost-gated Qwen video understanding. AMV and ASMV adapters are provisional extensions used only when explicitly requested.",
     "developerName": "Manuforest",
     "category": "Productivity",
     "capabilities": ["Interactive", "Read", "Write"],
     "websiteURL": "https://github.com/Manuforest/static-mad-analysis",
     "defaultPrompt": [
-      "Analyze this static MAD with timestamped evidence.",
-      "Reconstruct the subjects and time-space relations in this video.",
-      "Critique this static MAD's montage, animation, and audio-visual rhythm."
+      "Analyze this static MAD with the shared subject-centered core and supported static adapter.",
+      "Reconstruct the subjects, event-response chains, and time-space relations in this video.",
+      "Experiment with the provisional ASMV extension to analyze speaker roles and audiovisual argument."
     ],
     "brandColor": "#B21E35"
   }

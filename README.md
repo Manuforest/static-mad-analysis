@@ -1,18 +1,20 @@
 # Static MAD Analysis for Codex
 
-An evidence-first Codex skill and plugin for understanding 静止系 MAD, manga MAD, image-based AMV/MV, and other highly edited narrative video.
+An evidence-first Codex skill and plugin for understanding 静止系 MAD, with provisional AMV and ASMV extensions.
 
-It treats video understanding as reconstruction rather than frame captioning: coarse-to-fine sampling, subject and identity tracking, shot-relation classification, five separate clocks, montage grammar, audio profiling, alternative hypotheses, and timestamped evidence.
+It separates a shared subject-centered understanding core from media-specific adapters. The static-MAD adapter is the current supported path. AMV and ASMV adapters are exploratory extensions: they are loaded only when explicitly requested, their terminology may change, and they should not be treated as complete theories or settled standards.
 
 ## What it includes
 
 - adaptive FFmpeg frame sampling and candidate cut detection;
 - timestamped contact sheets;
 - lightweight audio energy and spectral profiles;
-- entity, relation, observation, timeline, and hypothesis records;
-- a static-MAD critique rubric;
+- entity, subject-role, relation, observation, timeline, and hypothesis records;
+- a static-MAD adapter for constructed motion, material treatment, typography, and compositing;
+- a provisional AMV extension for separating source-footage continuity from edit-created relations;
+- a provisional ASMV extension for speaker, addressee, assigned narrator, and discourse-position analysis;
 - optional Qwen video analysis with an explicit upload gate, environment-only keys, token estimation, and usage reporting;
-- safeguards against turning cuts, crops, parallax, and typography into invented character motion.
+- safeguards against invented motion, imported source causality, and false speech attribution.
 
 ## Requirements
 
@@ -59,7 +61,8 @@ montage, and audio-visual rhythm of this video with timestamped evidence.
 ```
 
 ```text
-Use $analyze-static-mad to critique this static MAD and explain every score deduction.
+Use $analyze-static-mad to analyze this ASMV by separating the visible subject,
+original speaker, assigned narrator, discourse subject, and editorial position.
 ```
 
 The deterministic first pass can also be run directly:
