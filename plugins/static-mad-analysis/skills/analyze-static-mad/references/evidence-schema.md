@@ -20,9 +20,12 @@ Classify by observable media behavior. A work may change type by interval.
 
 - `observation`: directly visible or audible;
 - `video_grounded_inference`: supported by adjacent shots or repeated structures;
-- `external_context`: obtained outside the analyzed video;
+- `original_work_context`: source identity, relationship, scene, route, chronology, viewpoint, or prior meaning established outside the analyzed video;
+- `other_external_context`: relevant information obtained outside the video that is neither source-work fact nor creator intent;
 - `documented_author_intent`: explicitly stated by the creator;
 - `uncertain`: unresolved or conflicting.
+
+The reporting model has three interpretive layers: video body (`observation` plus `video_grounded_inference`), original-work context, and creator expression. Preserve the finer provenance labels in evidence records.
 
 ## Observation
 
@@ -122,6 +125,22 @@ When speech leads, add discourse roles separately:
   "proposed_function": "Construct a unified encounter space.",
   "level": "video_grounded_inference",
   "confidence": 0.66
+}
+```
+
+## Original-work transformation
+
+```json
+{
+  "times": [70.0, 76.0],
+  "level": "original_work_context",
+  "source_fact": "The two shots come from separate routes and are not one physical encounter.",
+  "source_support": ["official route guide", "source scene transcript"],
+  "edited_arrangement": "Matched gaze and a sound bridge make the shots answer one another.",
+  "operations": ["juxtaposition", "parallelization"],
+  "changed_function": "Separate relationships become alternatives within one thematic conflict.",
+  "source_dependent_claim": true,
+  "confidence": 0.84
 }
 ```
 

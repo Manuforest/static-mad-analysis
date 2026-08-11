@@ -14,6 +14,7 @@ Always read:
 - [core-understanding.md](references/core-understanding.md) for the common reasoning model;
 - [evidence-schema.md](references/evidence-schema.md) for auditable records;
 - [temporal-relations.md](references/temporal-relations.md) for relation classification;
+- [original-work-context.md](references/original-work-context.md) for the post-blind-pass source-context layer;
 - [failure-modes.md](references/failure-modes.md) before finalizing.
 
 Then select adapters from observable media behavior, not the upload title or community tag:
@@ -33,6 +34,8 @@ Read [craft-analysis.md](references/craft-analysis.md) only when the user reques
 - Do not infer plot, identity, intention, or physical motion from an isolated frame.
 - Do not equate playback order, source-scene order, and reconstructed story chronology.
 - Complete a blind pass before consulting source summaries or creator explanations.
+- After the blind pass, use the original work to identify relevant characters, routes, source scenes, relationships, chronology, and prior meanings when the source can be identified. Skip this layer only when the user explicitly requests a video-only reading or the source cannot be established reliably.
+- Use original-work context to explain the edit's selection, relocation, juxtaposition, reassignment, condensation, expansion, or transformation of source material—not to score fidelity, completeness, or accessibility.
 - Require multiple identity anchors; keep uncertain roles provisional.
 - Do not force a protagonist. The thematic subject may be a relationship, group, place, emotion, institution, abstract force, or musical proposition.
 - Treat lyrics and quoted dialogue as authored audio material, not automatically as literal speech by the visible person.
@@ -108,21 +111,27 @@ Partition a dense interval into shots before narrating it. Record whether visibl
 
 Propose two or three answers to: **what relationship, contradiction, state change, discourse, or idea does this edit organize as important?** Test each across chapters, recurrences, music, sound, and endings. Prefer the account that explains more repeated structures with fewer unsupported assumptions.
 
-### 7. Add external context only when requested
+### 7. Run the original-work context pass
 
-Consult original works, lyrics, creator notes, interviews, or project commentary only after the blind analysis and only when the task calls for them. Report whether each item confirms, weakens, corrects, or merely inspires the video-grounded reading.
+After freezing the blind-pass records, follow [original-work-context.md](references/original-work-context.md). When the source is identifiable, establish only the source facts needed to interpret the edit: character and relationship identities, route or scene placement, original chronology, viewpoint, and the prior function of reused scenes or motifs.
 
-### 8. Explain craft through effects
+Map what the MAD does to those materials. Distinguish source-scene causality from relations created by the edit. Do not turn this pass into a plot recap, fidelity check, completeness audit, evaluation of non-source-viewer readability, or competition judgment. If the source remains uncertain, preserve neutral entity labels and state the limitation.
+
+### 8. Add the creator-expression layer
+
+Consult creator notes, descriptions, interviews, credits, and project commentary after both the blind pass and original-work pass when available. Report whether documented intent confirms, corrects, narrows, complicates, or merely inspires the preceding readings. Do not use creator intent to erase effects that are independently supported by the video.
+
+### 9. Explain craft through effects
 
 When requested, follow [craft-analysis.md](references/craft-analysis.md):
 
-`timestamped evidence -> operation -> perceptual or narrative effect -> limitation or plausible alternative`
+`timestamped evidence -> operation -> execution qualities -> formal/perceptual/narrative/display function(s) -> limitation or plausible alternative`
 
-Do not infer effectiveness from popularity, software complexity, source prestige, layer count, or effect count. Give revision advice only when requested.
+Include graphic design, virtual camera and motion design, 3D/spatial construction, compositing, transitions, atmosphere, and spectacle in the same passage-level craft analysis when relevant. Do not force every technique to advance plot or theme, and do not split craft into disconnected scoring systems. Do not infer effectiveness from popularity, unverified software complexity, source prestige, layer count, or effect count. Give revision advice only when requested.
 
-### 9. Report in layers
+### 10. Report in three interpretive layers
 
-Use [report-template.md](assets/report-template.md) for a detailed report. Lead with the main interpretation and confidence, then show the observable timeline, subject map, event chains, time-space, audiovisual organization, adapter-specific findings, alternatives, and optional external-context revision.
+Use [report-template.md](assets/report-template.md) for a detailed report. Lead with the main interpretation and confidence, then show the observable timeline, subject map, event chains, time-space, audiovisual organization, and adapter-specific findings. Synthesize three layers explicitly: **video body**, **original-work context**, and **creator expression**. State what each layer adds or changes; do not launder later context into blind observation.
 
 ## Completion gate
 
@@ -140,5 +149,10 @@ Before finalizing, verify that:
 - music sections, sound bridges, holds, motion amplitude, and reading time are considered;
 - dense passages received denser inspection and VLM motion claims were locally verified;
 - the leading interpretation includes counterevidence;
-- external context and author intent remain separate from blind evidence;
+- an identifiable original work received a post-blind-pass context check unless the user requested video-only analysis, and any unavailable context is stated;
+- the final synthesis distinguishes video body, original-work context, and creator expression;
+- original-work context explains editorial transformation without judging fidelity, completeness, non-source-viewer readability, or award suitability;
+- external context and author intent remain separate from blind evidence and from each other;
+- craft analysis recognizes formal, perceptual, atmospheric, decorative, structural, and technical-showcase value without splitting them from the passage's overall function;
+- visible graphic, camera, motion, 3D, compositing, and transition craft is not discarded merely because it lacks a narrative function;
 - craft commentary explains mechanisms and effects through timestamped evidence.

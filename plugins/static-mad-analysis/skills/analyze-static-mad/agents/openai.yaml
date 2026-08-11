@@ -1,7 +1,7 @@
 interface:
   display_name: "Subject-Centered MAD Analysis"
-  short_description: "Static-MAD analysis with provisional AMV and ASMV extensions"
-  default_prompt: "Use $analyze-static-mad to apply the subject-centered core and supported static-MAD adapter with timestamped evidence; use the provisional AMV or ASMV extensions only if I explicitly request them."
+  short_description: "Three-layer static-MAD analysis with source context"
+  default_prompt: "Use $analyze-static-mad to analyze this work through a blind video pass, original-work context, and separate creator-expression layer with timestamped evidence."
 
 policy:
   allow_implicit_invocation: true

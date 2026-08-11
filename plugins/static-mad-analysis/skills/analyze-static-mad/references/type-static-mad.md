@@ -21,7 +21,7 @@ Do not convert these classes into literal character action without adjacent evid
 
 ## Material logic
 
-Record visible operations as selection/crop, separation/redraw, compositing/reconstruction, fabricated composite, external asset, treatment-only, or uncertain. Compare the base composition with what animation adds: hierarchy, spatial relation, knowledge, emotional distance, or rhythm.
+Record visible operations as selection/crop, separation/redraw, compositing/reconstruction, fabricated composite, external asset, treatment-only, or uncertain. Compare the base composition with what animation adds: hierarchy, spatial relation, kinetic form, atmosphere, spectacle, knowledge, emotional distance, or rhythm.
 
 Track repeated source images across changed crop, color, context, text, and music. Treat them as possible memory, correction, accumulation, obsession, refrain, bookend, or economy—not automatically as new events.
 
@@ -41,4 +41,4 @@ Use [community-reading-framework.md](community-reading-framework.md) for communi
 
 ## Return to the core
 
-Translate every material observation back into a core claim: which subject gains salience or agency, what event or response becomes legible, what temporal relation is proposed, how viewer knowledge changes, or how the editorial thesis develops.
+Return material observations to the core when they change subject, event, time-space, viewer knowledge, or editorial thesis. Within the same analysis, also retain graphic design, virtual camera, motion design, 3D construction, compositing, transition precision, atmosphere, or spectacle when those are the operation's actual value; do not invent a narrative function.

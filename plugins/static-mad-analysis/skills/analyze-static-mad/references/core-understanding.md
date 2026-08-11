@@ -72,13 +72,20 @@ Generate at least two interpretations of what the edit organizes as important. E
 
 Prefer the interpretation that explains subject-role changes, event chains, recurrences, audiovisual structure, and ending with the fewest unsupported assumptions. Preserve ambiguity when different readings explain different layers.
 
-## 8. Evidence discipline
+## 8. Three-layer synthesis
 
-Keep four layers separate:
+After completing the blind core, add original-work context and creator expression in that order. The video-body layer establishes the edit's own subject, event, time-space, and audiovisual logic. The original-work layer identifies borrowed entities and scenes, then explains how extraction, relocation, juxtaposition, reassignment, condensation, expansion, or transformation changes their function. The creator-expression layer records documented intent.
+
+Do not use the original work to evaluate fidelity, completeness, omitted causality, non-source-viewer readability, or competition suitability. Use it to understand what the edit changes.
+
+## 9. Evidence discipline
+
+Keep evidence provenance separate inside the three interpretive layers:
 
 1. observation;
 2. video-grounded inference;
-3. external context;
-4. documented author intent.
+3. original-work context;
+4. other external context;
+5. documented author intent.
 
 Type adapters may change what counts as evidence, but never lower this standard. A static crop cannot prove body movement; continuous source footage cannot by itself prove the editor's new causal claim; a quoted line cannot by itself identify the edit's narrator.

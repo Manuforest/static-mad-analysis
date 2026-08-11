@@ -23,7 +23,9 @@ Review this list before final interpretation.
 - **Source/edit causality collapse**: attribute a relation created by juxtaposition to the original scene, or vice versa.
 - **Speech ownership collapse**: assume the visible person speaks, endorses, hears, or is addressed by a quoted line.
 - **Author-intent absolutism**: treat a creator statement as the only valid observable effect.
-- **Original-work comparison creep**: judge fidelity, completeness, or accessibility against the original when the user requested analysis of the video itself.
+- **Original-context omission**: avoid the source so completely that character identity, route structure, source chronology, or editorial transformation cannot be recognized.
+- **Original-work comparison creep**: turn source context into fidelity, completeness, omitted-information, non-source-viewer readability, canon-correctness, or competition judgment instead of analyzing transformation.
+- **Context-layer collapse**: present source facts or creator explanations as if they were established by the blind video pass.
 - **Fixed-symbol dictionary**: decide that one color/object always means one concept without tracking change.
 - **Effect intentionality bias**: assume every repeated effect carries deep meaning.
 - **Motion provenance blindness**: confuse depicted action, source-footage motion, retiming, crop motion, layer motion, and transition motion.

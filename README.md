@@ -10,6 +10,9 @@ It separates a shared subject-centered understanding core from media-specific ad
 - timestamped contact sheets;
 - lightweight audio energy and spectral profiles;
 - entity, subject-role, relation, observation, timeline, and hypothesis records;
+- a three-layer interpretation workflow separating video-body evidence, original-work context, and documented creator expression;
+- source-context mapping for character and route identity, original chronology, and editorial transformation without fidelity or competition scoring;
+- integrated craft analysis that includes graphic design, virtual camera, motion design, 3D/spatial construction, compositing, transitions, atmosphere, and technical spectacle without forcing narrative utility;
 - a static-MAD adapter for constructed motion, material treatment, typography, and compositing;
 - a provisional AMV extension for separating source-footage continuity from edit-created relations;
 - a provisional ASMV extension for speaker, addressee, assigned narrator, and discourse-position analysis;
@@ -54,6 +57,8 @@ Alternatively, copy `plugins/static-mad-analysis/skills/analyze-static-mad` into
 ## Use
 
 Invoke `$analyze-static-mad` with a local video or an authorized video URL. Typical requests:
+
+The default analysis order is a blind video pass, a focused original-work context pass, and a separate creator-expression pass. Ask for `video-only` when source research should be omitted.
 
 ```text
 Use $analyze-static-mad to reconstruct the subjects, time-space relations,

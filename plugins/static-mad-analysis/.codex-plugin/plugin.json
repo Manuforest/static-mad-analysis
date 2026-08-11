@@ -1,7 +1,7 @@
 {
   "name": "static-mad-analysis",
   "version": "0.2.0",
-  "description": "Subject-centered static-MAD analysis through a shared core, with provisional AMV and ASMV extensions.",
+  "description": "Three-layer static-MAD analysis through video evidence, original-work context, and creator expression, with provisional AMV and ASMV extensions.",
   "author": {
     "name": "Manuforest",
     "url": "https://github.com/Manuforest"
@@ -13,14 +13,14 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Subject-Centered MAD Analysis",
-    "shortDescription": "Static-MAD analysis with provisional AMV and ASMV extensions.",
-    "longDescription": "Analyze static MAD through adaptive sampling, subject-role tracking, event-response chains, time-space reconstruction, audiovisual organization, and optional cost-gated Qwen video understanding. AMV and ASMV adapters are provisional extensions used only when explicitly requested.",
+    "shortDescription": "Three-layer static-MAD analysis with source context.",
+    "longDescription": "Analyze static MAD through a blind video pass, focused original-work context, and a separate creator-expression layer, supported by adaptive sampling, subject-role tracking, event-response chains, time-space reconstruction, audiovisual organization, and optional cost-gated Qwen video understanding. Source context explains editorial transformation without fidelity, accessibility, or competition scoring. AMV and ASMV adapters remain provisional extensions used only when explicitly requested.",
     "developerName": "Manuforest",
     "category": "Productivity",
     "capabilities": ["Interactive", "Read", "Write"],
     "websiteURL": "https://github.com/Manuforest/static-mad-analysis",
     "defaultPrompt": [
-      "Analyze this static MAD with the shared subject-centered core and supported static adapter.",
+      "Analyze this static MAD through video-body evidence, original-work context, and creator expression.",
       "Reconstruct the subjects, event-response chains, and time-space relations in this video.",
       "Experiment with the provisional ASMV extension to analyze speaker roles and audiovisual argument."
     ],

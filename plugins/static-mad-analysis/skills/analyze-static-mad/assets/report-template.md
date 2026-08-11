@@ -44,10 +44,28 @@ Return each finding to its effect on subject, event, time-space, viewer knowledg
 
 Preserve ambiguity, counterevidence, and the most useful intervals to revisit.
 
-## Optional external-context revision
+## Original-work context
 
-Only when requested, report how external materials confirm, correct, weaken, or merely inspire the blind reading.
+Identify only source facts needed for the analyzed passages: characters and relationships, route or scene placement, original chronology, viewpoint, and prior motif function. Then map:
+
+`source fact -> edited arrangement -> editorial operation -> changed meaning`
+
+Do not score fidelity, completeness, omitted source information, non-source-viewer readability, or competition suitability.
+
+## Creator expression
+
+Report separately how descriptions, notes, interviews, or retrospectives confirm, correct, narrow, complicate, or merely inspire the video-body and original-work readings.
+
+## Three-layer synthesis
+
+| Layer | What it establishes | What it changes or adds | Confidence |
+|---|---|---|---|
+| Video body |  |  |  |
+| Original-work context |  |  |  |
+| Creator expression |  |  |  |
 
 ## Craft analysis
 
-When requested, explain craft as timestamped evidence, operation, effect, and limitation or alternative. Give revision priorities only when the user asks for advice.
+When requested, analyze each important passage as one construction. Connect its graphic composition, virtual camera or motion design, 3D/spatial work, compositing, transitions, music, rhythm, atmosphere, spectacle, narrative role, and technical finish only where each is actually present.
+
+Use `timestamped evidence -> operation -> execution qualities -> combined functions -> limitation or alternative`. Allow pure formal, decorative, atmospheric, or showcase value without inventing a narrative justification, but do not isolate those values into separate scoring channels. Give revision priorities only when the user asks for advice.

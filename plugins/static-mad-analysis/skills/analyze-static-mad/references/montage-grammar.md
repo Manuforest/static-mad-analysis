@@ -21,7 +21,7 @@ Inspect the base frame first:
 - text legibility and reading order;
 - color, value, edge, texture, and light coherence.
 
-Then ask what camera, layer, mask, typography, light, or puppet motion contributes. Motion that merely keeps the screen busy is not an expressive gain.
+Then ask what camera, layer, mask, typography, light, or puppet motion contributes. Its contribution may be narrative, perceptual, rhythmic, atmospheric, decorative, or openly spectacular. Judge control and integration before deciding that non-narrative motion is empty busyness.
 
 ## Material operations
 
