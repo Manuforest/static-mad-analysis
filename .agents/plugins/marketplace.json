@@ -1,0 +1,20 @@
+{
+  "name": "static-mad-analysis",
+  "interface": {
+    "displayName": "Static MAD Analysis"
+  },
+  "plugins": [
+    {
+      "name": "static-mad-analysis",
+      "source": {
+        "source": "local",
+        "path": "./plugins/static-mad-analysis"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Media"
+    }
+  ]
+}

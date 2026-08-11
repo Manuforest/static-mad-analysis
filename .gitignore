@@ -1,0 +1,21 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+Thumbs.db
+
+# User videos, downloaded media, and generated analysis artifacts
+*.mp4
+*.m4s
+*.mov
+*.mkv
+*.webm
+*.avi
+analysis/
+analysis-output/
+downloads/
+frames/
+contact_sheets/
