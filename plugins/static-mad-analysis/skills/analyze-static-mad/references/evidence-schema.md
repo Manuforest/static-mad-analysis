@@ -188,6 +188,25 @@ For footage-based edits, use `source_footage_action`, `retimed_source_motion`, o
 }
 ```
 
+## Reception evidence (optional)
+
+Use only when comments, reactions, or review discussion are part of the request. Reception remains external evidence, not a fourth interpretive layer.
+
+```json
+{
+  "source": "public comment or review URL",
+  "date": "2025-09-10",
+  "reception_type": "symbolic_decoding",
+  "observed_claim": "Several viewers connect the changing color system with shifts in time.",
+  "corresponding_video_evidence": [[12.0, 15.0], [61.0, 64.0], [94.0, 98.0]],
+  "supports": "The color changes are salient and repeatedly interpreted as temporal organization.",
+  "does_not_prove": "A fixed authorial color dictionary or unique correct reading.",
+  "confidence": 0.67
+}
+```
+
+Useful `reception_type` values include `character_discussion`, `emotional_response`, `symbolic_decoding`, `formal_observation`, `confusion_or_misreading`, and `meme_or_temporal_noise`. Usually exclude the final category from the report.
+
 ## Confidence guide
 
 - `0.90–1.00`: explicit and repeatedly verified;

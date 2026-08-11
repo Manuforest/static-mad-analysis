@@ -56,6 +56,10 @@ Do not score fidelity, completeness, omitted source information, non-source-view
 
 Report separately how descriptions, notes, interviews, or retrospectives confirm, correct, narrow, complicate, or merely inspire the video-body and original-work readings.
 
+## Reception evidence (optional)
+
+Include only when comments, reactions, or review discussion are part of the request. For each useful pattern, connect the reception phenomenon to video evidence, then state what it supports and cannot prove. Record the source date and exclude rankings, slogans, memes, and later-fandom noise unless they are themselves under study.
+
 ## Three-layer synthesis
 
 | Layer | What it establishes | What it changes or adds | Confidence |

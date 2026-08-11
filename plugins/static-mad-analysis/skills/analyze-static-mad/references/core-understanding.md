@@ -40,7 +40,7 @@ Classify the larger topology as single-thread transformation, dual-thread relati
 
 ## 5. Time-space and relation reconstruction
 
-Classify meaningful shot relations before forming chronology. Test physical continuity against ellipsis, scene change, flashback, anticipation, viewpoint change, repeated memory, fantasy, screen mediation, graphic match, symbolic association, contrast, reaction, causal consequence, sound bridge, and deliberate gap.
+Classify meaningful shot relations before forming chronology. Test physical continuity against temporal, subjective, graphic, symbolic, causal, reactive, and sound-based alternatives. Read [temporal-relations.md](temporal-relations.md) when the relation remains ambiguous or the work uses dense nonlinear construction.
 
 Maintain six clocks independently:
 
@@ -51,7 +51,7 @@ Maintain six clocks independently:
 - music time;
 - viewer-disclosure time.
 
-Inspect the preceding shot, transition, following shot, audio across the boundary, and later recurrence for important transitions.
+Inspect the preceding shot, boundary, following shot, audio bridge, and later recurrence for important transitions.
 
 ## 6. Audiovisual organization
 
@@ -74,18 +74,8 @@ Prefer the interpretation that explains subject-role changes, event chains, recu
 
 ## 8. Three-layer synthesis
 
-After completing the blind core, add original-work context and creator expression in that order. The video-body layer establishes the edit's own subject, event, time-space, and audiovisual logic. The original-work layer identifies borrowed entities and scenes, then explains how extraction, relocation, juxtaposition, reassignment, condensation, expansion, or transformation changes their function. The creator-expression layer records documented intent.
-
-Do not use the original work to evaluate fidelity, completeness, omitted causality, non-source-viewer readability, or competition suitability. Use it to understand what the edit changes.
+After completing the blind core, add original-work context and creator expression in that order. Use [original-work-context.md](original-work-context.md) to map relevant source facts to editorial transformation. Keep the three outputs distinct: video body, original-work context, and creator expression.
 
 ## 9. Evidence discipline
 
-Keep evidence provenance separate inside the three interpretive layers:
-
-1. observation;
-2. video-grounded inference;
-3. original-work context;
-4. other external context;
-5. documented author intent.
-
-Type adapters may change what counts as evidence, but never lower this standard. A static crop cannot prove body movement; continuous source footage cannot by itself prove the editor's new causal claim; a quoted line cannot by itself identify the edit's narrator.
+Preserve observation, video-grounded inference, original-work context, other external context, and documented creator intent as separate provenance classes. Use [evidence-schema.md](evidence-schema.md) when auditable records are needed. Type adapters may change how evidence is produced, never the required support.
