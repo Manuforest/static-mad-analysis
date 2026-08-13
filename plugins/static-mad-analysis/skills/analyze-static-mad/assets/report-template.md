@@ -1,79 +1,49 @@
-# Edited-video analysis
+# Reader-facing edited-video analysis
 
-## Main interpretation
+Choose the smallest shape that answers the request. Write from verified viewing judgments. Use continuous prose by default. Do not expose detector output, measurements, sampling details, model observations, confidence decimals, schema labels, or workflow status unless the user explicitly requests a method audit.
 
-State the editorial thesis, leading interpretation, confidence, and strongest counterinterpretation.
+## Appreciation or review
 
-## Evidence status and type map
+Open from a concrete viewing impression, tension, or moment. Let the reader follow any meaningful change from first impression to later clarification or rewatch. Develop two to four decisive passages through:
 
-Separate observation, video-grounded inference, external context, and documented author intent. Map which intervals use static-MAD, AMV, ASMV, or hybrid mechanisms and justify the selected adapters. Mark AMV and ASMV sections `provisional_extension`.
+`specific moment -> personal or perceptual response -> edit or sound choice -> changed understanding -> place in the whole work`
 
-## Chapter and music map
+Write as continuous paragraphs. A short or medium appreciation normally needs no internal headings, bullets, table, overview, or summary conclusion. End with the image, sound, relation, or unresolved point that remains after viewing.
 
-| Time | Chapter task | Music/speech function | Visual system | Dramatic question |
-|---|---|---|---|---|
+## Complete 拉片
 
-## Shot-reading status
+Begin with one or two paragraphs on the work's main progression and strongest arrangement decision. Then cover the full playback order through timestamped passage labels:
 
-State whether candidate boundaries were reviewed, how much playback time is covered by verified shots or justified clusters, which intervals remain unresolved, and which repeated rules or consequential exceptions emerged. Summarize the record here; include the full row-by-row log only when the user requests 拉片 output.
+### `00:00–00:12` — descriptive passage title when useful
 
-## Entities, subjects, and focalization
+Describe what happens, what is heard, which edit or design choice matters, how the passage continues or breaks the previous one, what changes in the event or relationship, what the viewer learns, and what the passage prepares. Integrate these points into connected prose rather than fixed subfields.
 
-Record provisional identities, anchors, conflicts, and changes among visual, shot, action, focal, dramatic, and thematic subjects. Add discourse roles where speech leads.
+Continue with time ranges until the ending. Group dense flashes when they perform one task. Finish with a few paragraphs on the recurring choices that actually develop across the work, such as color, typography, framing, crop, layer motion, compositing, sound-image timing, repetition, withdrawal, or payoff. Trace each element through changing context rather than assigning a permanent symbolic meaning.
 
-## Event-response-state chains
+When limited source material structures the work, follow what each important image initially reveals, withholds, and later changes. When text structures the work, identify the voice and explain what each decisive passage adds to event, psychology, relationship, or emotional movement, together with the space the image and music give it. Include these only when they govern the work.
 
-| Time | Event/proposition | Response | State/relationship change | Consequence | Confidence |
-|---|---|---|---|---|---|
+Do not use a table for a single-work 拉片 unless the user asks for one or exact repeated-field comparison would be materially clearer. Do not add a coverage statement; the continuous time ranges show the coverage.
 
-## Time-space reconstruction
+## Technical and arrangement analysis
 
-Separate playback, shot, story, subjective, music, and viewer-disclosure time.
+State briefly how the work organizes attention and develops its material. Organize the response around a few decisive passages or movements, using only as many descriptive headings as navigation requires.
 
-## Audiovisual organization
+For each passage, develop:
 
-Analyze music sections, dialogue or narration, sound bridges, silence, motion amplitude, holds, reading time, and dynamic/static contrast.
+`visible or audible result -> technique or design operation -> relation to nearby or recurring elements -> execution -> viewing effect -> event, relationship, information, or structural role`
 
-## Adapter-specific findings
+Discuss only the craft that is present and consequential. A technique may have formal, spatial, rhythmic, atmospheric, decorative, spectacular, narrative, or mixed value. Phrase uncertain implementation naturally. Do not infer software, plugins, layer count, labor, or production time from the finished video. Give improvement advice only when requested.
 
-Include only relevant subsections:
+Do not recommend less text, more source material, delayed CG use, or a standard song structure without identifying the concrete viewing problem and preserving the work's chosen mode.
 
-- **Static MAD**: depicted versus constructed motion, material transformation, fabricated space, typography, repetition, and global expression systems.
-- **AMV — provisional extension**: within-clip continuity, source-scene relation when authorized, edit-created relation, retiming, and cross-scene subject consistency.
-- **ASMV — provisional extension**: speaker/addressee/visible-subject separation, assigned narrator, discourse subject, editorial position, quotation chains, and music/dialogue mixing.
+Avoid fixed sections for composition, color, motion, music, editing, and narrative. Let the work's own progression determine the order.
 
-Return each finding to its effect on subject, event, time-space, viewer knowledge, or editorial thesis.
+## Source context
 
-## Alternatives and unresolved questions
+Add only facts needed to identify characters, relationships, chronology, speaker, viewpoint, or the edit's transformation of source material. Attribute external facts naturally. Keep creator statements and community reception separate when relevant.
 
-Preserve ambiguity, counterevidence, and the most useful intervals to revisit.
+## Method appendix — explicit request only
 
-## Original-work context
+Include only when the user asks how the analysis was performed, requests reproducibility, or wants an evidence audit. It may cover media preparation, sampling, candidate-boundary review, audio measurements and their limited diagnostic use, model assistance, local verification, unresolved intervals, confidence, and provenance.
 
-Identify only source facts needed for the analyzed passages: characters and relationships, route or scene placement, original chronology, viewpoint, and prior motif function. Then map:
-
-`source fact -> edited arrangement -> editorial operation -> changed meaning`
-
-Do not score fidelity, completeness, omitted source information, non-source-viewer readability, or competition suitability.
-
-## Creator expression
-
-Report separately how descriptions, notes, interviews, or retrospectives confirm, correct, narrow, complicate, or merely inspire the video-body and original-work readings.
-
-## Reception evidence (optional)
-
-Include only when comments, reactions, or review discussion are part of the request. For each useful pattern, connect the reception phenomenon to video evidence, then state what it supports and cannot prove. Record the source date and exclude rankings, slogans, memes, and later-fandom noise unless they are themselves under study.
-
-## Three-layer synthesis
-
-| Layer | What it establishes | What it changes or adds | Confidence |
-|---|---|---|---|
-| Video body |  |  |  |
-| Original-work context |  |  |  |
-| Creator expression |  |  |  |
-
-## Craft analysis
-
-When requested, analyze each important passage as one construction. Connect its graphic composition, virtual camera or motion design, 3D/spatial work, compositing, transitions, music, rhythm, atmosphere, spectacle, narrative role, and technical finish only where each is actually present.
-
-Use `timestamped evidence -> operation -> execution qualities -> combined functions -> limitation or alternative`. Allow pure formal, decorative, atmospheric, or showcase value without inventing a narrative justification, but do not isolate those values into separate scoring channels. Give revision priorities only when the user asks for advice.
+Keep the appendix separate from the reading of the work. Measurements locate passages for review; they do not establish musical or emotional conclusions by themselves.

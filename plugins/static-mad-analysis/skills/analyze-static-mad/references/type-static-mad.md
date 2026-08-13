@@ -25,6 +25,10 @@ Record visible operations as selection/crop, separation/redraw, compositing/reco
 
 Track repeated source images across changed crop, color, context, text, and music. Treat them as possible memory, correction, accumulation, obsession, refrain, bookend, or economy—not automatically as new events.
 
+When limited material visibly governs the arrangement, read [material-economy-and-reveal.md](material-economy-and-reveal.md). Track source-asset identity separately from shot identity, follow partial-to-full disclosure, and examine whether privileged images are saved, exhausted, or recontextualized. For absent viewpoint characters, test camera position, reciprocal gaze, offered objects, letters, photographs, empty seats, and negative space before concluding that the relation is missing.
+
+When readable text carries substantial narrative or emotional work, read [text-led-narrative.md](text-led-narrative.md). Treat text as authored audiovisual material whose value depends on function, voice, reading conditions, emotional timing, and division of labor with the image. Text amount is not a quality criterion.
+
 ## Static-specific reading
 
 Read adjacency as syntax and examine:
@@ -36,6 +40,8 @@ Read adjacency as syntax and examine:
 - graphic matches and fabricated spaces;
 - visual-change, processing, semantic, and reading density as distinct quantities;
 - holds as active duration rather than lack of technique.
+
+Distinguish surface continuity from narrative continuity. Shared color, typography, treatment, sound, direction, or recurring objects may bridge limited material, but verify whether events, responses, relationships, and viewer knowledge also progress.
 
 Use [community-reading-framework.md](community-reading-framework.md) for community vocabulary and [montage-grammar.md](montage-grammar.md) for detailed operations.
 

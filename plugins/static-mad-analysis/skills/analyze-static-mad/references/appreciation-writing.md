@@ -1,10 +1,22 @@
 # Human-centered appreciation writing
 
+## Contents
+
+- Keep rigor internal and selection visible
+- Adopt a credible voice
+- Preserve the experience of discovery
+- Prefer direct speech to rhetorical packaging
+- Attribute precisely and use timestamps naturally
+- Avoid generic analysis texture
+- Shape by request and run the final audit
+
 Use when the user asks for 鉴赏, 赏析, 感想, 评价, review, commentary, or a short audience-facing response. Preserve the rigor of the internal shot reading while writing as an attentive viewer rather than displaying an analysis database.
 
 ## Keep rigor internal and selection visible
 
 Complete the chronological shot record first. Then choose two to four passages that best establish the central judgment. Do not reproduce every analytical category or summarize the shot log row by row.
+
+Write from verified viewing judgments, not directly from detector output, audio profiles, contact sheets, VLM notes, confidence fields, or evidence schemas. The reader does not need a report of how the judgment was obtained unless methodology is the subject of the request.
 
 Write from this movement:
 
@@ -17,7 +29,9 @@ Allow the prose to spend unequal space on what matters. Do not force balanced pr
 Write as a knowledgeable MAD viewer with preferences, limits, and attention to craft.
 
 - Lead with the most distinctive viewing judgment, tension, or moment—not a definition of MAD or a plot synopsis.
-- Use first person when it clarifies reception, but do not prefix every claim with “I think.”
+- Let understanding develop in viewing order when that development matters: first impression, a detail that catches attention, later information that changes the reading, and what becomes clearer on rewatch.
+- Use first person for a real viewing change, preference, reservation, surprise, or lingering response. Do not prefix every claim with “I think,” narrate every reaction, or manufacture a persona.
+- Prefer “看到这里，我才注意到……” or “回看开头时……” when accurate. Avoid repeatedly speaking for an abstract audience with “观众会……” or “作者让观众…….”
 - Allow qualified reactions such as a detail becoming clearer on rewatch or a passage working formally while remaining narratively ambiguous.
 - State uncertainty where evidence is genuinely incomplete. Do not manufacture hesitation as a style effect.
 - Prefer concrete verbs and sensory consequences over prestige adjectives.
@@ -25,6 +39,16 @@ Write as a knowledgeable MAD viewer with preferences, limits, and attention to c
 - End on the work's residual image, unresolved tension, or changed understanding when appropriate; do not automatically summarize and elevate the theme.
 
 Human voice comes from selection and judgment, not slang, typos, filler, fake intimacy, or exaggerated sincerity.
+
+## Preserve the experience of discovery
+
+Do not open every appreciation with a finished thesis and spend the rest proving it. A simple appreciation should often follow how the work is encountered:
+
+`initial response -> noticed detail -> later clarification or complication -> rewatch or final judgment`
+
+Use this movement selectively. Keep chronology only where it shows how the edit controls knowledge or changes the viewer's relation to an earlier image. Do not fake a first viewing when only a rewatch is available; state the actual viewing position naturally.
+
+Distinguish a personal response from a universal effect. Support “I found the hold more affecting than the preceding montage” with the hold, sound, and placement that produced the preference. Do not turn subjectivity into unsupported praise.
 
 ## Prefer direct speech to rhetorical packaging
 
@@ -73,6 +97,12 @@ Keep source and edit contribution legible in natural prose. Name the editor's se
 
 Avoid unsupported intent language. Prefer “the edit makes this feel like...” or “the finished passage organizes...” over “the author wanted to say...” unless creator intent is documented and identified as such.
 
+## Let text carry the appreciation when the work does
+
+Do not treat copy quantity as a shortcut to restraint or excess. In a text-led static MAD, follow the line that changes the event, exposes a character's state, clarifies a relationship, or gains force when repeated. Explain how the image and music make room for it, answer it, or complicate it.
+
+Quote selectively and keep the response centered on the viewing experience. Prefer “the picture stays with her expression long enough for the admission to settle” over internal language about display duration, reading load, or text density. Criticize a passage through the consequence the viewer encounters, such as losing the speaker, missing a causal step, having no time to absorb a key sentence, or watching text and image demand attention at once.
+
 ## Use timestamps naturally
 
 Use timestamps when they help the reader locate evidence. Attach them to a passage rather than presenting a ledger. A short appreciation may omit timestamps only when the referenced moment is unmistakably identified and the user did not request auditability.
@@ -92,15 +122,16 @@ Rewrite or remove:
 - conversational particles added only to simulate personality.
 - any “不是……而是……” reversal or a renamed variant of the same sentence frame;
 - decorative metaphors that make a simple viewing response sound like literary commentary.
+- workflow narration, detector statistics, audio measurements, confidence values, internal labels, or completeness claims used to display the analysis process.
 
 Translate reception words into form. For example, explain what feels 爽, 压抑, 狂气, or 有意境 through duration, density, motion, contrast, sound, composition, recurrence, and absence.
 
 ## Shape by request
 
 - **Short comment**: one central judgment, one or two supporting passages, and a concise afterthought.
-- **Appreciation**: a distinctive opening, two to four evidence-led movements, one meaningful limitation or ambiguity when warranted, and an ending with residual force.
+- **Appreciation**: a natural opening from a viewing impression or decisive moment, two to four evidence-led movements, one meaningful limitation or ambiguity when warranted, and an ending with residual force. Prefer continuous paragraphs; use no headings unless the response is long enough to need navigation.
 - **Critical review**: state the apparent aim, explain what works and fails through mechanisms, and preserve asymmetry rather than manufacturing a scorecard.
-- **Detailed analysis**: use the report template instead; natural prose may frame sections, but evidence architecture remains visible.
+- **Detailed analysis**: use the report template instead; keep judgments traceable to specific passages while leaving the internal evidence architecture hidden.
 
 ## Final read-aloud audit
 
@@ -115,5 +146,10 @@ Before returning the prose, ask:
 - Would the prose still sound credible read aloud by a serious viewer?
 - Does any sentence use “不是……而是……,” “不只是……更是……,” “与其说……不如说……,” or an equivalent rhetorical reversal? Rewrite it as a direct claim.
 - Would each metaphor occur naturally in spoken viewing commentary, and does it clarify a visible or audible detail? Delete or literalize it if either answer is no.
+- Are music and rhythm described as heard and felt in the passage, without waveform or energy data standing in for listening?
+- Does any sentence mainly prove that the model sampled, detected, checked, or covered the video? Delete it.
+- Does the prose sound like someone who watched and reconsidered the work, or like an omniscient explanation assembled after the fact?
+- Is first person tied to an actual reaction, preference, discovery, or changed understanding?
+- Could headings, bullets, or repeated mini-conclusions be removed without harming navigation? Remove them.
 
 If replacing the title leaves most evaluative sentences intact, return to the shot record and rewrite from work-specific evidence.

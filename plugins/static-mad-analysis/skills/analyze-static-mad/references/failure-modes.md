@@ -25,6 +25,15 @@ Use this compact audit before finalizing. Detailed procedures live in the core a
 - **Fixed-symbol dictionary**: assign one permanent meaning to a changing color, object, or effect.
 - **Template overfit**: impose a standard song or story structure that the work does not use.
 - **Shot-log dumping**: paraphrase chronological rows without discovering a repeated rule, development, rupture, or consequential exception.
+- **Text-quantity bias**: praise sparse copy as inherently restrained or dismiss abundant copy without examining its narrative, psychological, relational, rhythmic, or graphic task.
+- **Reading-load blindness**: judge what the text says while ignoring whether duration, hierarchy, motion, contrast, and competing image detail let it register.
+- **Speaker drift blindness**: miss an unsupported change in voice, addressee, visible subject, or who can hear and know the text.
+- **Text-image competition blindness**: describe text and image separately while missing that they demand incompatible attention at the same moment.
+- **Information-only text reading**: credit added facts while ignoring emotional stasis, unchanged relationships, or absent character response.
+- **Asset-count bias**: treat limited CGs or repeated panels as failure without examining crop, withholding, changed context, and payoff.
+- **Premature privileged-image blindness**: miss that decisive visual information is exhausted early and later recurrence adds no new task.
+- **Reuse conflation**: treat every crop as a new source image or every recurrence as the same editorial use.
+- **Surface-unity substitution**: accept shared grading, typography, or treatment as proof that events and relationships connect.
 
 ## Media provenance and context
 
@@ -50,6 +59,14 @@ Use this compact audit before finalizing. Detailed procedures live in the core a
 - **Category-completeness prose**: force equal sections on visuals, music, editing, story, and theme instead of following the work's actual center of gravity.
 - **Rhetorical-reversal habit**: package ordinary claims in “不是……而是……,” “不只是……更是……,” “与其说……不如说……,” or equivalent contrast frames instead of stating the judgment directly.
 - **Metaphor inflation**: turn colors, cuts, titles, memories, or relationships into grand objects and actions that a viewer would not naturally use in conversation, forcing the reader to interpret the prose before the video.
+- **Analysis-process leakage**: expose detector counts, sampling, audio measurements, VLM notes, confidence scores, schema labels, coverage state, or workflow narration in normal audience-facing prose.
+- **Measurement-as-experience**: use loudness, spectral, motion, color, or cut statistics as the conclusion instead of verifying and describing the musical, visual, rhythmic, or emotional experience.
+- **Taxonomy-facing prose**: write internal role, relation, provenance, or mechanism labels for the reader when plain description would be clearer and equally precise.
+- **Omniscient appreciation**: present a finished thesis from above the work and assign reactions to “the audience” without preserving any genuine viewing discovery, preference, reconsideration, or uncertainty.
+- **Imagery dictionary**: assign a fixed meaning to a color, object, body fragment, title, or interface without tracing adjacency, recurrence, event context, character relation, sound, and changed viewer knowledge.
+- **Technique-stop analysis**: identify a mask, match, crop, parallax move, type treatment, or sync point and stop before explaining what it connects, changes, withholds, recalls, or prepares in the sequence.
+- **Format-first reporting**: force tables, uniform headings, repeated categories, summaries, or scorecard-like sections onto a single-work reading when timestamped prose would be clearer.
+- **Production-advice intrusion**: turn analysis into general rules about reducing text, saving CGs, changing duration, or following a song template when the user did not request revision advice.
 
 ## Final rule
 
@@ -58,3 +75,7 @@ Keep editing recognition, interpretation, original-work context, creator intent,
 For appreciation prose, replace the work's title mentally. If most evaluative sentences still fit another MAD, return to the shot record and rewrite from work-specific evidence.
 
 Then read the appreciation aloud. Remove rhetorical reversals and any metaphor that sounds performed, needs explanation, or obscures the observable operation and viewing effect.
+
+For every audience-facing output, remove sentences that mainly prove the analysis process. Keep internal aids available for a separate method appendix only when the user explicitly asks for methodology or evidence auditing.
+
+Remove structure that mainly displays the framework. For appreciation, preserve a credible viewer position. For 拉片 and craft analysis, follow elements into adjacent shots, repeated appearances, events, responses, relationships, and viewer disclosure before forming a judgment.

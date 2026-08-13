@@ -21,8 +21,11 @@ Load other references only when needed:
 - [original-work-context.md](references/original-work-context.md) after the blind pass when the source is identifiable;
 - [evidence-schema.md](references/evidence-schema.md) for detailed, auditable, or multi-observer records;
 - [montage-grammar.md](references/montage-grammar.md) for symbolic inserts, fabricated composites, graphic matches, typography, or screen mediation;
+- [material-economy-and-reveal.md](references/material-economy-and-reveal.md) when limited CGs, panels, sprites, absent viewpoint characters, repeated source images, crop-based withholding, or staged reveals organize the work;
+- [text-led-narrative.md](references/text-led-narrative.md) when dialogue, monologue, letters, narration, quotations, or other readable text carries substantial event, causality, psychology, viewpoint, relationship, or emotional development;
 - [craft-analysis.md](references/craft-analysis.md) when the user requests technique, critique, comparison, or improvement advice;
 - [appreciation-writing.md](references/appreciation-writing.md) when the user requests an appreciation, review, short comment, or other audience-facing evaluative prose;
+- [audience-facing-translation.md](references/audience-facing-translation.md) before every user-facing appreciation, 拉片, technical analysis, review, or report;
 - [community-reading-framework.md](references/community-reading-framework.md) for static-MAD community vocabulary, arrangement diagnosis, or reception research;
 - [qwen-vl.md](references/qwen-vl.md) and [vlm-prompt.md](references/vlm-prompt.md) before external VLM use;
 - [failure-modes.md](references/failure-modes.md) for the final audit.
@@ -34,6 +37,9 @@ For hybrids, tag claims by mechanism, such as `static_constructed_motion`, `sour
 - Complete a blind chronological pass before consulting source summaries or creator explanations.
 - Complete chronological shot coverage before drafting an interpretation or appreciation. Treat detector output as candidate boundaries, not a finished shot log.
 - Ground major claims in timestamped context before and after the relevant moment.
+- Track how elements connect to events, responses, relationships, and viewer knowledge across adjacent and repeated passages; do not stop at naming imagery or technique.
+- Judge text by its task, readability, timing, emotional progression, and relation to the image. Never infer quality from text quantity alone.
+- Judge repeated or limited source material by reveal control, changed context, relational work, and payoff. Never infer weakness from asset quantity or repetition alone.
 - Require multiple identity anchors and keep uncertain roles provisional.
 - Do not force a protagonist; the subject may be a relationship, group, place, emotion, institution, force, or musical proposition.
 - Distinguish playback order from reconstructed chronology and depicted action from edit-constructed motion.
@@ -111,14 +117,16 @@ Research comments or reviews only when the user requests community reception, pr
 
 ### 8. Report and audit
 
+Before drafting any audience-facing response, read [audience-facing-translation.md](references/audience-facing-translation.md). Convert machine evidence and internal taxonomy into verified viewing judgments first. Draft from what a viewer can see, hear, understand, and evaluate. Keep detector output, measurements, sampling details, VLM notes, confidence scores, schema labels, and workflow status private unless the user explicitly requests a method or evidence audit.
+
 Select the output from the user's intent:
 
 - for a detailed, technical, or research-style analysis, use [report-template.md](assets/report-template.md);
 - for an appreciation, review, or short comment, read [appreciation-writing.md](references/appreciation-writing.md) and turn the internal shot record into selective, natural prose;
-- for an explicit 拉片 or shot-by-shot request, expose a useful version of the chronological shot record and its pattern synthesis;
+- for an explicit 拉片 or shot-by-shot request, expose a continuous reader-facing timeline in timestamped prose, connecting content and technique to events, responses, relationships, viewer knowledge, and structural placement rather than reproducing the internal shot record;
 - for a brief answer, keep the internal evidence discipline but report only the central judgment and strongest supporting passages.
 
-Do not dump the internal shot log into an appreciation. Lead detailed reports with the main interpretation and confidence; lead appreciations with the most specific viewing judgment rather than a methodology preface.
+Do not dump the internal shot log into an appreciation. Lead detailed reports with the main interpretation and state only uncertainty that changes how the reader should understand it. Lead appreciations with the most specific viewing judgment rather than a methodology preface.
 
 Before finalizing, verify that:
 
@@ -132,4 +140,11 @@ Before finalizing, verify that:
 - craft is explained through mechanisms and effects rather than effort, software, layer count, popularity, or narrative usefulness alone;
 - appreciation prose remains work-specific, selective, and traceable to the shot reading rather than merely conversational;
 - appreciation prose states judgments directly, contains no “不是……而是……” rhetorical reversal or equivalent template, and removes metaphors that would sound affected in ordinary spoken commentary;
+- normal audience-facing output contains no detector statistics, sampling details, raw audio measurements, confidence decimals, schema labels, or workflow narration;
+- music claims describe audible phrases, accents, entries, releases, holds, and sound-image relations verified by listening rather than treating audio measurements as conclusions;
+- appreciation prose preserves the viewer's developing experience when useful, including first impression, later clarification, rewatch, preference, and unresolved response without pretending to be omniscient;
+- 拉片 and craft prose follow elements through adjacency, recurrence, narrative consequence, and changed viewer knowledge instead of assigning fixed symbolic meanings or ending at technique names;
+- text-led passages identify voice, addressee, new information or state change, reading conditions, and image-text relation where relevant; praise or criticism never rests on text quantity;
+- repeated assets are traced as the same source material through crop scope, disclosure stage, changed context, and later payoff rather than counted as separate shots or dismissed as reuse;
+- audience-facing structure remains restrained: use continuous prose and timestamped passages by default, avoid tables for single-work analysis, and add headings or lists only when they materially aid navigation;
 - the analysis does not become a fidelity, accessibility, ranking, award, or competition judgment.

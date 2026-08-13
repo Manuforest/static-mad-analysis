@@ -27,9 +27,18 @@ Use:
 ### Information arrangement
 
 - Separate essential turning points from supporting context.
-- Compare semantic density and reading demand with available duration.
+- Compare semantic density and reading demand with available duration, hierarchy, motion, and competing image detail.
 - Ask whether deleting a shot would clarify the central relation without removing a necessary change.
 - Distinguish deliberate overload from information distributed at equal weight.
+- For text-led work, track who speaks, what each passage changes, and whether repeated wording gains a new task. Do not use text quantity as a proxy for economy.
+
+Use:
+
+- **text-quantity bias / 文案数量偏见** when abundance or scarcity is treated as quality without examining function;
+- **reading-load mismatch / 阅读负荷失配** when presentation prevents an important line from being absorbed;
+- **speaker drift / 叙述者漂移** when voice or addressee changes without a legible handoff;
+- **text-image competition / 画文竞争** when simultaneous demands obscure the passage's intended priority;
+- **emotional stasis / 情绪停滞** when text adds facts while character state and emotional direction remain unchanged.
 
 ### Emotional arrangement
 
@@ -83,6 +92,14 @@ When the editor has abundant source material, examine selection more strictly:
 - Do heterogeneous shots become acceptable only at high speed, then fail in slower passages?
 
 Useful diagnoses include **surface unity**, **tonal rupture**, **related material without an editorial relation**, and **local success, connective failure**.
+
+For limited-material work, also test:
+
+- **premature privileged-image use / 关键素材提前消耗**: decisive visual information arrives before the structure can make it consequential and later uses do not revise it;
+- **reuse without change / 复用无变化**: crop, timing, context, text, music, event, and viewer knowledge leave a recurrence with no new task;
+- **surface unity masking a relation gap / 视觉统一遮蔽关系缺口**: treatment connects the surface while event, response, motivation, or relationship remains unsupported.
+
+These terms describe consequences. Repetition and early revelation can work when they establish a refrain, premise, or material that later passages transform.
 
 ## Use reception as auxiliary evidence
 

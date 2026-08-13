@@ -182,6 +182,45 @@ For a cluster, set `unit_type` to `shot_cluster` and add `shot_count`, `density_
 }
 ```
 
+## Source-asset use (optional)
+
+Use when limited material, crop-based withholding, or repeated CGs organize the work. Keep source-asset identity separate from analytical shot identity.
+
+```json
+{
+  "times": [32.0, 35.0],
+  "source_asset_id": "cg_07",
+  "visible_region": "face and offered letter; off-screen partner withheld",
+  "disclosure_stage": "expanded",
+  "prior_uses": [[8.0, 9.5]],
+  "new_information": "The gesture is directed toward the viewpoint character.",
+  "changed_function": "A private expression becomes part of an exchange.",
+  "later_payoff": [[78.0, 82.0]],
+  "confidence": 0.81
+}
+```
+
+## Text unit (optional)
+
+Use when readable text carries consequential narrative or emotional work. Summarize copyrighted text unless a short quotation is necessary for identification.
+
+```json
+{
+  "times": [52.0, 58.0],
+  "text_source": "character_inner_voice",
+  "speaker": "person_b",
+  "addressee": "self_or_uncertain",
+  "visible_subject": "person_a leaving the room",
+  "primary_task": "supply_motivation_and_change_relationship",
+  "new_information_or_state": "person_b recognizes the departure as a consequence of their silence",
+  "reading_conditions": "stable image, high contrast, two phrase-aligned entries",
+  "image_text_relation": "the image shows the consequence while the text supplies recognition",
+  "music_relation": "second line completes during the vocal release",
+  "recurrence_or_payoff": [[88.0, 92.0]],
+  "confidence": 0.78
+}
+```
+
 ## Original-work transformation
 
 ```json

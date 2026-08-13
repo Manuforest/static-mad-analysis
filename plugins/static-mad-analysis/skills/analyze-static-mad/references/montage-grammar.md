@@ -10,6 +10,8 @@ Describe an important edit in three layers:
 
 Example: `eye -> medicine bottle` denotes an eye and bottle, relates through symbolic association, and functions to recast feeling as diagnosis.
 
+Continue one step further when narrative context is present: identify whose action or response is reorganized, what relationship is made newly legible, what the viewer learns at this point, and whether a later recurrence confirms or revises the connection. An element has no independent meaning outside its placement and history in the edit.
+
 ## Separate the still composition from added motion
 
 Inspect the base frame first:
@@ -63,6 +65,12 @@ For each system, record:
 
 The same source image can represent an event, memory, corrected recognition, accumulated time, or final acceptance depending on its later framing.
 
+Do not write an imagery dictionary such as “orange means youth” or “an eye means observation.” State what accompanies the element on each appearance, which character or event it is attached to, how duration and sound alter it, and what later information changes. Preserve counterexamples and changing functions.
+
+For important recurrences, use:
+
+`first appearance and available knowledge -> intervening event -> changed recurrence -> effect on character relation or narrative understanding`
+
 ## Processing density and “hand count”
 
 Separate:
@@ -73,6 +81,16 @@ Separate:
 - reading demand: how much time the viewer needs to understand it.
 
 High processing density may mark present time, pressure, control, maturity, or spectacle; low density may mark memory, intimacy, emptiness, or relief. Infer the local opposition from recurrence rather than applying a universal rule.
+
+## Text-image relations
+
+When readable text carries narrative weight, read [text-led-narrative.md](text-led-narrative.md). Test whether text and image supplement missing cause, deepen psychology, counterpoint one another, relay different tasks, confirm a decisive fact, create a deliberate pause, or compete for attention. Repeated wording may change through a new speaker, addressee, image, musical position, or later knowledge.
+
+Judge the relation over the passage. A strong transition or dense typographic entrance may briefly disrupt reading, but the following hold, simplified image, or repeated line may restore it. State the actual consequence rather than applying a fixed legibility rule.
+
+## Substitute continuity
+
+When source shots do not share physical continuity, test gaze, direction, focal position, scale, color, typography placement, recurring objects, sound bridges, and musical phrasing. These devices can preserve attention or mood without proving a shared event. Verify event, response, relationship, and viewer knowledge separately.
 
 ## Focalization
 
