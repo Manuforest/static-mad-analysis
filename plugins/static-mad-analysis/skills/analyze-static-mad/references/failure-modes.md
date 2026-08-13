@@ -12,6 +12,8 @@ Use this compact audit before finalizing. Detailed procedures live in the core a
 - **VLM continuity hallucination**: smooth cuts, crop changes, and layer animation into physical action.
 - **Single-story lock-in**: settle on one fluent explanation before testing alternatives.
 - **Evidence laundering**: present source knowledge, reception, or creator notes as blind observation.
+- **Selective-evidence masquerading as shot analysis**: inspect only memorable timestamps while claiming chronological 拉片 coverage.
+- **Candidate-cut literalism**: accept detector boundaries as finished analytical shots without verification, merging, or splitting.
 
 ## Subject, event, and arrangement
 
@@ -22,6 +24,7 @@ Use this compact audit before finalizing. Detailed procedures live in the core a
 - **Shot-handoff blindness**: praise individual shots without checking focal, gaze, direction, scale, motion, shape, or tonal transfer.
 - **Fixed-symbol dictionary**: assign one permanent meaning to a changing color, object, or effect.
 - **Template overfit**: impose a standard song or story structure that the work does not use.
+- **Shot-log dumping**: paraphrase chronological rows without discovering a repeated rule, development, rupture, or consequential exception.
 
 ## Media provenance and context
 
@@ -43,7 +46,11 @@ Use this compact audit before finalizing. Detailed procedures live in the core a
 - **Reception-as-truth**: use comments, reactions, popularity, or reviewer authority to replace video evidence.
 - **Comment-era collapse**: mix initial reception with later virality, adaptation news, nostalgia, or fandom discussion.
 - **Competition-judgment creep**: convert diagnostic language into ranking, award, eligibility, or contest-fitness claims.
+- **Human-style simulation**: add slang, hesitation, conversational particles, or irregularity while leaving judgments generic and unsupported.
+- **Category-completeness prose**: force equal sections on visuals, music, editing, story, and theme instead of following the work's actual center of gravity.
 
 ## Final rule
 
 Keep editing recognition, interpretation, original-work context, creator intent, craft judgment, and reception evidence distinct. Explain mechanisms and effects rather than reducing the work to one scalar.
+
+For appreciation prose, replace the work's title mentally. If most evaluative sentences still fit another MAD, return to the shot record and rewrite from work-specific evidence.

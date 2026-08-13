@@ -13,6 +13,10 @@ Separate observation, video-grounded inference, external context, and documented
 | Time | Chapter task | Music/speech function | Visual system | Dramatic question |
 |---|---|---|---|---|
 
+## Shot-reading status
+
+State whether candidate boundaries were reviewed, how much playback time is covered by verified shots or justified clusters, which intervals remain unresolved, and which repeated rules or consequential exceptions emerged. Summarize the record here; include the full row-by-row log only when the user requests 拉片 output.
+
 ## Entities, subjects, and focalization
 
 Record provisional identities, anchors, conflicts, and changes among visual, shot, action, focal, dramatic, and thematic subjects. Add discourse roles where speech leads.

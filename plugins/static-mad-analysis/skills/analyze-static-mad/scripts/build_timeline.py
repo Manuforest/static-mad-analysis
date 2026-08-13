@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 from pathlib import Path
 
 from common import read_json, write_json
@@ -27,7 +28,14 @@ def main() -> None:
         "analysis_state": "blind_read",
         "shots": shot_data["shots"],
         "audio_windows": audio,
+        "music_sections": [],
         "chapters": [],
+        "shot_clusters": [],
+        "shot_reading": {
+            "state": "candidate_boundaries_unreviewed",
+            "covered_intervals": [],
+            "unresolved_intervals": [],
+        },
         "unresolved_questions": [],
     }
     output = Path(args.output_dir).resolve()
@@ -37,6 +45,23 @@ def main() -> None:
     write_json(output / "relations.json", {"relations": []})
     write_json(output / "hypotheses.json", {"hypotheses": [], "external_context_used": False})
     (output / "observations.jsonl").write_text("", encoding="utf-8")
+    shot_rows = []
+    for shot in shot_data["shots"]:
+        shot_rows.append({
+            "shot_id": shot["shot_id"],
+            "times": [shot["start"], shot["end"]],
+            "chapter_id": None,
+            "cluster_id": None,
+            "unit_type": "shot",
+            "boundary_status": "candidate_unreviewed",
+            "visible_content": None,
+            "momentary_subject": None,
+            "music": {"section": None, "event": None, "lyric_or_speech": None},
+            "edit_operations": [],
+            "relation_to_previous": [],
+        })
+    shot_reading = "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in shot_rows)
+    (output / "shot_reading.jsonl").write_text(shot_reading, encoding="utf-8")
     print(output)
 
 

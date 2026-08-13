@@ -1,7 +1,7 @@
 interface:
   display_name: "Subject-Centered MAD Analysis"
-  short_description: "Three-layer static-MAD analysis with source context"
-  default_prompt: "Use $analyze-static-mad to analyze this work through a blind video pass, original-work context, and separate creator-expression layer with timestamped evidence."
+  short_description: "Shot-by-shot static-MAD analysis and appreciation"
+  default_prompt: "Use $analyze-static-mad to complete a blind shot-by-shot reading of this MAD, then write a natural appreciation grounded in timestamped evidence."
 
 policy:
   allow_implicit_invocation: true
