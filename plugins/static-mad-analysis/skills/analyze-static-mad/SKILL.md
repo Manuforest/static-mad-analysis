@@ -131,4 +131,5 @@ Before finalizing, verify that:
 - original-work facts, creator notes, and reception material retain provenance;
 - craft is explained through mechanisms and effects rather than effort, software, layer count, popularity, or narrative usefulness alone;
 - appreciation prose remains work-specific, selective, and traceable to the shot reading rather than merely conversational;
+- appreciation prose states judgments directly, contains no “不是……而是……” rhetorical reversal or equivalent template, and removes metaphors that would sound affected in ordinary spoken commentary;
 - the analysis does not become a fidelity, accessibility, ranking, award, or competition judgment.

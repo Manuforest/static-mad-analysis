@@ -26,6 +26,47 @@ Write as a knowledgeable MAD viewer with preferences, limits, and attention to c
 
 Human voice comes from selection and judgment, not slang, typos, filler, fake intimacy, or exaggerated sincerity.
 
+## Prefer direct speech to rhetorical packaging
+
+State the observation and reaction in the wording a serious viewer could naturally say aloud. Draft the literal version first. Keep figurative language only when it is familiar, brief, visibly anchored, and clearer than the literal alternative.
+
+### Forbidden contrast frames
+
+Do not use rhetorical reversal templates built around “不是……而是……,” including softened or expanded variants such as:
+
+- “并不是 A，而是 B”;
+- “不只是 A，更是 B”;
+- “与其说是 A，不如说是 B”;
+- “真正的 X 不是 A，是 B”;
+- “表面上是 A，实际上是 B” when it merely packages a judgment that can be stated directly.
+
+Write the positive claim directly, then support it with the relevant passage. If a genuine distinction matters, use two plain sentences and name the observable difference.
+
+Example:
+
+- Avoid: “橙色不是青春，而是青春留下的遗物。”
+- Prefer: “橙色段落一开始很轻快。知道莉音的结局后再看，这些合照和日常片段会带出很强的追忆感。”
+
+### Metaphor filter
+
+Remove a metaphor when any of the following is true:
+
+- it would sound unusual or affected in an ordinary conversation about the video;
+- the reader must decode the comparison before understanding the judgment;
+- it assigns physical action to an abstract idea without a visible or audible anchor;
+- it replaces an observable edit operation with a grand image such as “审判,” “献祭,” “伤口,” “牢笼,” “洪流,” “遗物,” or “证词”;
+- it extends across several sentences or combines unrelated image systems;
+- the same point becomes clearer when stated through color, duration, framing, order, repetition, sound, or reaction.
+
+Do not build section headings or central claims from a novel metaphor. Conventional phrases such as “节奏压下来” may remain when they are natural in spoken criticism and immediately correspond to an audible or visible change.
+
+Example:
+
+- Avoid: “共同生活的纪念照下一秒变成一份供词。”
+- Prefer: “前一段还在集中展示几人的日常，下一段立刻切到有月承认杀死莉音。情绪就在这里骤然变冷。”
+
+Use at most one clearly useful figurative comparison in a paragraph. When unsure, keep the literal sentence.
+
 ## Attribute precisely
 
 Keep source and edit contribution legible in natural prose. Name the editor's selection, duration, order, adjacency, reframing, constructed motion, compositing, sound relation, or musical placement instead of crediting every strong source image to the MAD.
@@ -49,6 +90,8 @@ Rewrite or remove:
 - a conclusion beginning with “Overall, this is an excellent work...”;
 - praise that would remain valid after replacing the title with another MAD;
 - conversational particles added only to simulate personality.
+- any “不是……而是……” reversal or a renamed variant of the same sentence frame;
+- decorative metaphors that make a simple viewing response sound like literary commentary.
 
 Translate reception words into form. For example, explain what feels 爽, 压抑, 狂气, or 有意境 through duration, density, motion, contrast, sound, composition, recurrence, and absence.
 
@@ -70,5 +113,7 @@ Before returning the prose, ask:
 - Are sentence openings, transitions, and paragraph shapes overly regular?
 - Does the opening avoid boilerplate and the ending avoid repeated summary?
 - Would the prose still sound credible read aloud by a serious viewer?
+- Does any sentence use “不是……而是……,” “不只是……更是……,” “与其说……不如说……,” or an equivalent rhetorical reversal? Rewrite it as a direct claim.
+- Would each metaphor occur naturally in spoken viewing commentary, and does it clarify a visible or audible detail? Delete or literalize it if either answer is no.
 
 If replacing the title leaves most evaluative sentences intact, return to the shot record and rewrite from work-specific evidence.

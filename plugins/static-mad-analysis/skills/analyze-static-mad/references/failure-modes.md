@@ -48,9 +48,13 @@ Use this compact audit before finalizing. Detailed procedures live in the core a
 - **Competition-judgment creep**: convert diagnostic language into ranking, award, eligibility, or contest-fitness claims.
 - **Human-style simulation**: add slang, hesitation, conversational particles, or irregularity while leaving judgments generic and unsupported.
 - **Category-completeness prose**: force equal sections on visuals, music, editing, story, and theme instead of following the work's actual center of gravity.
+- **Rhetorical-reversal habit**: package ordinary claims in “不是……而是……,” “不只是……更是……,” “与其说……不如说……,” or equivalent contrast frames instead of stating the judgment directly.
+- **Metaphor inflation**: turn colors, cuts, titles, memories, or relationships into grand objects and actions that a viewer would not naturally use in conversation, forcing the reader to interpret the prose before the video.
 
 ## Final rule
 
 Keep editing recognition, interpretation, original-work context, creator intent, craft judgment, and reception evidence distinct. Explain mechanisms and effects rather than reducing the work to one scalar.
 
 For appreciation prose, replace the work's title mentally. If most evaluative sentences still fit another MAD, return to the shot record and rewrite from work-specific evidence.
+
+Then read the appreciation aloud. Remove rhetorical reversals and any metaphor that sounds performed, needs explanation, or obscures the observable operation and viewing effect.
