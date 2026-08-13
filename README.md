@@ -84,7 +84,7 @@ Use $analyze-static-mad to 拉片 this static MAD, then write a natural apprecia
 that selects the most revealing passages instead of reproducing the full shot log.
 ```
 
-For a public URL, the skill attempts local acquisition before asking for a manually downloaded file. It stores the media and public metadata in the analysis workspace. Browser cookies are optional and may be used only after explicit authorization.
+For a public URL, the skill attempts the highest available resolution within the requested limit before asking for a manually downloaded file. It stores the media, selected format, actual resolution, access mode, and public metadata in the analysis workspace. Browser cookies are optional and may be used only after explicit authorization. Limits of a low-resolution or platform-transcoded copy are kept separate from evaluation of the work.
 
 The deterministic first pass can also be run directly:
 

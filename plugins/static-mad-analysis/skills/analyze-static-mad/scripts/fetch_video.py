@@ -33,12 +33,21 @@ def validate_url(url: str) -> str:
 
 def format_selector(max_height: int | None) -> str:
     if max_height is None:
-        return "bestvideo[vcodec^=avc1]+bestaudio[ext=m4a]/bestvideo+bestaudio/best"
+        return "bestvideo+bestaudio/best"
     return (
-        f"bestvideo[vcodec^=avc1][height<={max_height}]+bestaudio[ext=m4a]/"
         f"bestvideo[height<={max_height}]+bestaudio/"
-        f"best[height<={max_height}]/worstvideo+worstaudio/worst"
+        f"best[height<={max_height}]/bestvideo+bestaudio/best"
     )
+
+
+def selected_formats(info: dict[str, Any]) -> list[dict[str, Any]]:
+    raw = info.get("requested_downloads") or info.get("requested_formats") or [info]
+    keys = ("format_id", "format_note", "ext", "width", "height", "fps", "vcodec", "acodec", "filesize", "filesize_approx")
+    return [{key: item.get(key) for key in keys if item.get(key) is not None} for item in raw]
+
+
+def selected_video_format(formats: list[dict[str, Any]]) -> dict[str, Any]:
+    return next((item for item in formats if item.get("vcodec") not in (None, "none")), {})
 
 
 def public_metadata(info: dict[str, Any]) -> dict[str, Any]:
@@ -174,6 +183,9 @@ def fetch_video(
 
     metadata_path = output_dir / "metadata.json"
     manifest_path = output_dir / "download-manifest.json"
+    formats = selected_formats(info)
+    video_format = selected_video_format(formats)
+    selected_height = video_format.get("height") or info.get("height")
     write_json(metadata_path, public_metadata(info))
     write_json(
         manifest_path,
@@ -182,7 +194,17 @@ def fetch_video(
             "resolved_url": info.get("webpage_url") or url,
             "extractor": info.get("extractor_key") or info.get("extractor"),
             "video_id": info.get("id"),
-            "max_height": max_height,
+            "requested_max_height": max_height,
+            "access_mode": "authorized_browser_session" if cookies_from_browser else "public",
+            "selected_formats": formats,
+            "selected_video": {
+                "format_id": video_format.get("format_id") or info.get("format_id"),
+                "width": video_format.get("width") or info.get("width"),
+                "height": selected_height,
+                "fps": video_format.get("fps") or info.get("fps"),
+                "codec": video_format.get("vcodec") or info.get("vcodec"),
+            },
+            "fine_detail_review_limited": bool(selected_height and selected_height < 720),
             "metadata_only": metadata_only,
             "video_path": str(video_path) if video_path else None,
             "metadata_path": str(metadata_path),

@@ -54,9 +54,9 @@ Distinguish a personal response from a universal effect. Support “I found the 
 
 State the observation and reaction in the wording a serious viewer could naturally say aloud. Draft the literal version first. Keep figurative language only when it is familiar, brief, visibly anchored, and clearer than the literal alternative.
 
-### Forbidden contrast frames
+### Absolute prohibition on contrast reversals
 
-Do not use rhetorical reversal templates built around “不是……而是……,” including softened or expanded variants such as:
+Never emit rhetorical reversal templates built around “不是……而是…….” Treat this as a hard completion condition, not a preference. One occurrence invalidates the entire draft until that sentence is rewritten. This includes softened or expanded variants such as:
 
 - “并不是 A，而是 B”;
 - “不只是 A，更是 B”;
@@ -64,7 +64,7 @@ Do not use rhetorical reversal templates built around “不是……而是…�
 - “真正的 X 不是 A，是 B”;
 - “表面上是 A，实际上是 B” when it merely packages a judgment that can be stated directly.
 
-Write the positive claim directly, then support it with the relevant passage. If a genuine distinction matters, use two plain sentences and name the observable difference.
+Scan the complete draft immediately before sending. Write the positive claim directly, then support it with the relevant passage. If a genuine distinction matters, use two plain sentences and name the observable difference. Changing conjunctions while preserving the same rhetorical reversal does not satisfy the rule.
 
 Example:
 
@@ -120,7 +120,6 @@ Rewrite or remove:
 - a conclusion beginning with “Overall, this is an excellent work...”;
 - praise that would remain valid after replacing the title with another MAD;
 - conversational particles added only to simulate personality.
-- any “不是……而是……” reversal or a renamed variant of the same sentence frame;
 - decorative metaphors that make a simple viewing response sound like literary commentary.
 - workflow narration, detector statistics, audio measurements, confidence values, internal labels, or completeness claims used to display the analysis process.
 
@@ -144,7 +143,7 @@ Before returning the prose, ask:
 - Are sentence openings, transitions, and paragraph shapes overly regular?
 - Does the opening avoid boilerplate and the ending avoid repeated summary?
 - Would the prose still sound credible read aloud by a serious viewer?
-- Does any sentence use “不是……而是……,” “不只是……更是……,” “与其说……不如说……,” or an equivalent rhetorical reversal? Rewrite it as a direct claim.
+- Has the entire draft passed the absolute contrast-reversal check with zero violations? Rewrite every occurrence before sending.
 - Would each metaphor occur naturally in spoken viewing commentary, and does it clarify a visible or audible detail? Delete or literalize it if either answer is no.
 - Are music and rhythm described as heard and felt in the passage, without waveform or energy data standing in for listening?
 - Does any sentence mainly prove that the model sampled, detected, checked, or covered the video? Delete it.

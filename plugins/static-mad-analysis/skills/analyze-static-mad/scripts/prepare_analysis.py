@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
+from common import read_json, write_json
 from fetch_video import fetch_video
 
 
@@ -16,6 +17,29 @@ def call(script: Path, *args: str) -> None:
 def is_http_url(value: str) -> bool:
     parsed = urlparse(value)
     return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+
+
+def attach_acquisition_record(manifest_path: Path, acquisition_path: Path | None) -> None:
+    if acquisition_path is None:
+        return
+    manifest = read_json(manifest_path)
+    acquisition = read_json(acquisition_path)
+    if not isinstance(manifest, dict) or not isinstance(acquisition, dict):
+        raise ValueError("Analysis and acquisition manifests must contain JSON objects.")
+    manifest["acquisition"] = {
+        key: acquisition.get(key)
+        for key in (
+            "input_url",
+            "resolved_url",
+            "extractor",
+            "video_id",
+            "requested_max_height",
+            "access_mode",
+            "selected_video",
+            "fine_detail_review_limited",
+        )
+    }
+    write_json(manifest_path, manifest)
 
 
 def main() -> None:
@@ -34,8 +58,9 @@ def main() -> None:
     here = Path(__file__).resolve().parent
     output = Path(args.output_dir).resolve()
     output.mkdir(parents=True, exist_ok=True)
+    acquisition_path: Path | None = None
     if is_http_url(args.video):
-        video_path, metadata_path, _ = fetch_video(
+        video_path, metadata_path, acquisition_path = fetch_video(
             args.video,
             output / "source",
             max_height=args.max_height,
@@ -57,6 +82,7 @@ def main() -> None:
     audio = output / "audio"
     evidence = output / "evidence"
     call(here / "probe_video.py", video, "--output", str(manifest))
+    attach_acquisition_record(manifest, acquisition_path)
     call(here / "detect_shots.py", video, "--manifest", str(manifest), "--output", str(shots), "--threshold", args.scene_threshold)
     sample_args = [video, "--manifest", str(manifest), "--shots", str(shots), "--output-dir", str(frames),
                    "--base-fps", args.base_fps, "--cut-fps", args.cut_fps]

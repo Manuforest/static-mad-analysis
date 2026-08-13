@@ -14,6 +14,10 @@ Use this compact audit before finalizing. Detailed procedures live in the core a
 - **Evidence laundering**: present source knowledge, reception, or creator notes as blind observation.
 - **Selective-evidence masquerading as shot analysis**: inspect only memorable timestamps while claiming chronological 拉片 coverage.
 - **Candidate-cut literalism**: accept detector boundaries as finished analytical shots without verification, merging, or splitting.
+- **Acquisition-quality misattribution**: turn low-resolution download, platform transcode, screenshot, or sampling limits into criticism of the work.
+- **Unverified legibility criticism**: call typography unreadable when only the analyzed copy lacks enough detail.
+- **Codec-over-resolution selection**: accept a lower-resolution preferred codec while a higher-resolution authorized format is available.
+- **Upscaling-as-evidence**: treat sharpening, enlargement, or OCR failure as proof of what the source contains.
 
 ## Subject, event, and arrangement
 

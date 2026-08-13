@@ -50,6 +50,8 @@ Recognize deliberate spectacle. A conspicuous passage may serve as climax, signa
 
 Infer only what the output supports. Do not name software, plugins, node setups, layer counts, production time, or difficulty without project files, breakdowns, or creator documentation. Distinguish visible complexity from verified labor.
 
+Before criticizing small text, matte edges, line quality, texture, compression, banding, or fine compositing, verify that the analyzed copy preserves the necessary detail. Treat low-resolution acquisition, platform transcoding, screenshots, sampling, and enlargement as evidence limits. Reserve the affected judgment or obtain a better authorized copy; never transfer those limits to the work.
+
 ## Reporting
 
 - Lead with mechanisms and effects rather than adjectives.

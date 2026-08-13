@@ -28,12 +28,13 @@ Load other references only when needed:
 - [audience-facing-translation.md](references/audience-facing-translation.md) before every user-facing appreciation, 拉片, technical analysis, review, or report;
 - [community-reading-framework.md](references/community-reading-framework.md) for static-MAD community vocabulary, arrangement diagnosis, or reception research;
 - [qwen-vl.md](references/qwen-vl.md) and [vlm-prompt.md](references/vlm-prompt.md) before external VLM use;
-- [failure-modes.md](references/failure-modes.md) for the final audit.
+- [failure-modes.md](references/failure-modes.md) when auditing a difficult analysis, diagnosing a known output failure, or revising the skill.
 
 For hybrids, tag claims by mechanism, such as `static_constructed_motion`, `source_footage_action`, `edit_created_relation`, or `recontextualized_speech`. Do not select adapters from the upload title alone.
 
 ## Core constraints
 
+- **Absolute audience-facing style constraint**: never use the “不是 A，而是 B” rhetorical pattern or any softened, expanded, or renamed equivalent listed in [appreciation-writing.md](references/appreciation-writing.md). This constraint is non-negotiable across appreciation, 拉片, craft analysis, review, and report prose. One occurrence makes the draft invalid. Scan the entire draft immediately before sending and rewrite every violation as direct positive statements. Quote a forbidden form only when the user is explicitly discussing the rule itself.
 - Complete a blind chronological pass before consulting source summaries or creator explanations.
 - Complete chronological shot coverage before drafting an interpretation or appreciation. Treat detector output as candidate boundaries, not a finished shot log.
 - Ground major claims in timestamped context before and after the relevant moment.
@@ -66,6 +67,8 @@ Run the bundled workflow when local analysis is available:
 ```
 
 The command accepts either a local path or an HTTP/HTTPS URL. For a URL, it downloads one authorized video into `$analysisDir/source`, writes `metadata.json` and `download-manifest.json`, resolves the local media path, and continues the normal FFmpeg workflow. If `yt-dlp` is missing and dependency installation is permitted, ask before installing from the skill-local `requirements.txt`; do not send the user away to perform the download manually before an automated public attempt has failed.
+
+Read the actual resolution and acquisition record in `manifest.json` before judging text legibility, edge quality, texture, compression, or fine compositing. If the analyzed copy is below 720p or a critical detail remains unclear, first retry the highest public format without preferring a lower-resolution codec. If higher quality requires login, request permission for browser-session access only when that detail is necessary. Otherwise continue with supported large-scale structure and reserve the affected claim. Never assign download, platform-transcode, sampling, or upscaling limits to the MAD itself.
 
 For an acquisition-only check or metadata test, run:
 
@@ -140,21 +143,11 @@ Do not dump the internal shot log into an appreciation. Lead detailed reports wi
 
 Before finalizing, verify that:
 
-- identities and subject roles have multiple anchors;
-- the full playback duration is covered by verified shots or justified clusters before selected passages are interpreted;
-- meaningful events include responses and state changes, or relation gaps are marked;
-- playback, story, subjective, music, and disclosure order are not collapsed;
-- depicted, source-footage, retimed, crop/layer, transition, and uncertain motion are distinguished where relevant;
-- major interpretations have timestamped support, alternatives, and counterevidence;
-- original-work facts, creator notes, and reception material retain provenance;
-- craft is explained through mechanisms and effects rather than effort, software, layer count, popularity, or narrative usefulness alone;
-- appreciation prose remains work-specific, selective, and traceable to the shot reading rather than merely conversational;
-- appreciation prose states judgments directly, contains no “不是……而是……” rhetorical reversal or equivalent template, and removes metaphors that would sound affected in ordinary spoken commentary;
-- normal audience-facing output contains no detector statistics, sampling details, raw audio measurements, confidence decimals, schema labels, or workflow narration;
-- music claims describe audible phrases, accents, entries, releases, holds, and sound-image relations verified by listening rather than treating audio measurements as conclusions;
-- appreciation prose preserves the viewer's developing experience when useful, including first impression, later clarification, rewatch, preference, and unresolved response without pretending to be omniscient;
-- 拉片 and craft prose follow elements through adjacency, recurrence, narrative consequence, and changed viewer knowledge instead of assigning fixed symbolic meanings or ending at technique names;
-- text-led passages identify voice, addressee, new information or state change, reading conditions, and image-text relation where relevant; praise or criticism never rests on text quantity;
-- repeated assets are traced as the same source material through crop scope, disclosure stage, changed context, and later payoff rather than counted as separate shots or dismissed as reuse;
-- audience-facing structure remains restrained: use continuous prose and timestamped passages by default, avoid tables for single-work analysis, and add headings or lists only when they materially aid navigation;
-- the analysis does not become a fidelity, accessibility, ranking, award, or competition judgment.
+- identity, chronological coverage, event-response chains, time layers, and motion provenance are adequately established;
+- major interpretations retain timestamped support, alternatives, counterevidence, and separation among video evidence, source context, creator notes, and reception;
+- acquisition or transcode limits remain attached to the analyzed copy and do not become criticism of the work;
+- craft claims describe visible or audible mechanisms and effects without guessing software, effort, or production complexity;
+- audience prose hides internal measurements, follows heard music, and remains work-specific, selective, natural, and structurally restrained;
+- the absolute rhetorical-pattern prohibition has been checked across the entire draft, with zero violations remaining; affected sentences have been rewritten directly rather than cosmetically renamed;
+- text, imagery, technique, and repeated assets are followed through context, relationships, disclosure, and payoff instead of quantity judgments or fixed meanings;
+- the response stays within the requested mode and does not drift into fidelity, accessibility, ranking, award, or competition judgment.

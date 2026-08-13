@@ -21,6 +21,8 @@ Use four internal progressions together:
 
 Do not publish counts or curves in ordinary analysis. Convert them into the actual reading experience.
 
+Verify small text from a sufficiently detailed copy before diagnosing reading demand. If the current download, platform transcode, screenshot, or sample cannot preserve the lettering, mark the wording or legibility unresolved and keep that limitation out of the work's evaluation.
+
 ## Name the text's work
 
 Text may narrate an event, supply causality, expose psychology, restrict focalization, bridge time, define a relationship, delay a revelation, pace emotion, establish a refrain, or operate graphically. A line may perform several tasks; identify the task that changes the passage.

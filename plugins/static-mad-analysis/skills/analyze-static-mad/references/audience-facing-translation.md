@@ -41,6 +41,12 @@ Reveal these only when the user explicitly requests methodology, evidence auditi
 
 Technical media facts such as duration, resolution, frame rate, or codec belong in the response only when they answer the request or affect a visible result.
 
+## Keep acquisition limits attached to the copy
+
+Separate the finished work from the platform transcode, downloaded file, sampled frame, screenshot, OCR result, and any enlargement used during analysis. A low-resolution copy can support broad composition, order, rhythm, and large text while leaving small typography, edges, texture, compression, and fine compositing unresolved.
+
+When a limitation affects a claim, state it once and reserve that claim: “当前取得的公开下载副本为 480p，其中的小字号文字无法可靠辨认；这一限制不计入作品评价。” Do not describe the work itself as illegible, rough, compressed, or lacking detail until a sufficiently faithful source confirms it. Upscaling and sharpening can aid inspection but do not restore missing evidence.
+
 ## Translate internal findings
 
 | Internal aid or label | Reader-facing judgment |
