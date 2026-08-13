@@ -1,2 +1,1 @@
-numpy>=1.26
-Pillow>=10.0
+-r plugins/static-mad-analysis/skills/analyze-static-mad/requirements.txt

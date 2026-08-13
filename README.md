@@ -27,10 +27,17 @@ It separates a shared subject-centered understanding core from media-specific ad
 - Python 3.10+;
 - FFmpeg and FFprobe on `PATH`, or configured with `STATIC_MAD_FFMPEG` and `STATIC_MAD_FFPROBE`;
 - Python packages from `requirements.txt`;
+- `yt-dlp` for acquiring authorized public video URLs;
 - optionally, a user-owned Qwen/DashScope API key and video-capable model.
 
 ```powershell
 python -m pip install -r requirements.txt
+```
+
+For a skill-only installation, install the requirements bundled inside the skill:
+
+```powershell
+python -m pip install -r <skill-directory>/requirements.txt
 ```
 
 ## Install the plugin
@@ -77,11 +84,27 @@ Use $analyze-static-mad to 拉片 this static MAD, then write a natural apprecia
 that selects the most revealing passages instead of reproducing the full shot log.
 ```
 
+For a public URL, the skill attempts local acquisition before asking for a manually downloaded file. It stores the media and public metadata in the analysis workspace. Browser cookies are optional and may be used only after explicit authorization.
+
 The deterministic first pass can also be run directly:
 
 ```powershell
 python plugins/static-mad-analysis/skills/analyze-static-mad/scripts/prepare_analysis.py `
   input.mp4 --output-dir analysis-output
+```
+
+The same entry point accepts an authorized URL:
+
+```powershell
+python plugins/static-mad-analysis/skills/analyze-static-mad/scripts/prepare_analysis.py `
+  "https://www.bilibili.com/video/BV.../" --output-dir analysis-output
+```
+
+To test URL support without downloading the media:
+
+```powershell
+python plugins/static-mad-analysis/skills/analyze-static-mad/scripts/fetch_video.py `
+  "https://www.bilibili.com/video/BV.../" --output-dir analysis-output/source --metadata-only
 ```
 
 ## Optional Qwen pass

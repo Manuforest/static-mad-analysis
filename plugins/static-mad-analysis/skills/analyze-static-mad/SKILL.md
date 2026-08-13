@@ -51,7 +51,9 @@ For hybrids, tag claims by mechanism, such as `static_constructed_motion`, `sour
 
 ### 1. Establish the surface
 
-Prefer a local video supplied or authorized by the user. For a URL, use an available browser or connector within the authorized session. Never expose cookies, tokens, or account data.
+Accept a local video or an authorized HTTP/HTTPS video URL. For a public URL that requires local media analysis, run `scripts/fetch_video.py` or pass the URL directly to `scripts/prepare_analysis.py` before asking the user to download it manually. Store acquired media and metadata inside the analysis workspace, never inside the skill directory.
+
+Attempt public access without cookies first. If acquisition fails, report the exact blocker: missing dependency, disabled network, authentication, region restriction, unavailable media, DRM, or insufficient permission. Use `--cookies-from-browser` only after the user explicitly authorizes access to a local browser session. Never print, copy, persist, upload, or expose cookies, tokens, request headers, or account data. Do not bypass access controls.
 
 Record title, credits, duration, frame rate, resolution, audio, subtitles or lyrics, and creator notes. Build an interval type map and revise it after inspection. Store artifacts in a user-approved directory without overwriting the source.
 
@@ -60,7 +62,15 @@ Record title, credits, duration, frame rate, resolution, audio, subtitles or lyr
 Run the bundled workflow when local analysis is available:
 
 ```powershell
-& $python scripts/prepare_analysis.py $video --output-dir $analysisDir --focus 80:100:8
+& $python scripts/prepare_analysis.py $videoOrUrl --output-dir $analysisDir --focus 80:100:8
+```
+
+The command accepts either a local path or an HTTP/HTTPS URL. For a URL, it downloads one authorized video into `$analysisDir/source`, writes `metadata.json` and `download-manifest.json`, resolves the local media path, and continues the normal FFmpeg workflow. If `yt-dlp` is missing and dependency installation is permitted, ask before installing from the skill-local `requirements.txt`; do not send the user away to perform the download manually before an automated public attempt has failed.
+
+For an acquisition-only check or metadata test, run:
+
+```powershell
+& $python scripts/fetch_video.py $videoUrl --output-dir "$analysisDir/source" --metadata-only
 ```
 
 Use coarse-to-fine sampling. Scene detection is an attention cue, not ground truth. Increase density around unstable identity, action phase, gaze, text, source-scene boundaries, flash inserts, match cuts, or sound-image relations. Partition dense intervals into shots before interpreting them.

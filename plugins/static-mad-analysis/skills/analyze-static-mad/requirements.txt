@@ -1,0 +1,3 @@
+yt-dlp
+numpy>=1.26
+Pillow>=10.0
