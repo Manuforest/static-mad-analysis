@@ -7,6 +7,7 @@ It separates a shared subject-centered understanding core from media-specific ad
 ## What it includes
 
 - adaptive FFmpeg frame sampling and candidate cut detection;
+- a chronological shot-by-shot MAD reading layer that verifies candidate cuts, supports dense shot clusters, and separates source contribution from editorial contribution;
 - timestamped contact sheets;
 - lightweight audio energy and spectral profiles;
 - entity, subject-role, relation, observation, timeline, and hypothesis records;
@@ -17,7 +18,8 @@ It separates a shared subject-centered understanding core from media-specific ad
 - a provisional AMV extension for separating source-footage continuity from edit-created relations;
 - a provisional ASMV extension for speaker, addressee, assigned narrator, and discourse-position analysis;
 - optional Qwen video analysis with an explicit upload gate, environment-only keys, token estimation, and usage reporting;
-- safeguards against invented motion, imported source causality, and false speech attribution.
+- safeguards against invented motion, imported source causality, and false speech attribution;
+- intent-sensitive output for detailed reports, exposed 拉片 records, and evidence-grounded human-centered appreciation prose.
 
 ## Requirements
 
@@ -68,6 +70,11 @@ montage, and audio-visual rhythm of this video with timestamped evidence.
 ```text
 Use $analyze-static-mad to analyze this ASMV by separating the visible subject,
 original speaker, assigned narrator, discourse subject, and editorial position.
+```
+
+```text
+Use $analyze-static-mad to 拉片 this static MAD, then write a natural appreciation
+that selects the most revealing passages instead of reproducing the full shot log.
 ```
 
 The deterministic first pass can also be run directly:

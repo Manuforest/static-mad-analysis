@@ -86,6 +86,60 @@ When speech leads, add discourse roles separately:
 }
 ```
 
+## Music section
+
+Use manually confirmed musical structure. Audio energy windows may support but never replace this record.
+
+```json
+{
+  "times": [38.0, 62.0],
+  "label": "pre_chorus_build",
+  "musical_events": ["vocal_entry", "instrumental_accumulation", "suspended_downbeat"],
+  "lyric_or_speech_unit": null,
+  "energy_shape": "restrained_to_rising",
+  "visual_response": "crop motion expands while cuts remain delayed",
+  "boundary_evidence": ["new vocal phrase", "change in cutting density"],
+  "confidence": 0.84
+}
+```
+
+## Shot-reading record
+
+Write one JSON object per line in `shot_reading.jsonl`. Cover every analytical shot or justified shot cluster. Keep routine rows compact and enrich only important or ambiguous units.
+
+```json
+{
+  "shot_id": "s018",
+  "times": [42.31, 44.08],
+  "chapter_id": "chorus_1",
+  "cluster_id": null,
+  "unit_type": "shot",
+  "boundary_status": "manually_verified",
+  "visible_content": "The framing travels from a hand to a face already posed in profile.",
+  "momentary_subject": "person_b's withheld response",
+  "music": {
+    "section": "chorus_1",
+    "event": "vocal_entry_and_downbeat",
+    "lyric_or_speech": null
+  },
+  "base_image": "The source image supplies the profile pose and expression.",
+  "edit_operations": ["selection_or_crop", "camera_or_crop_motion", "color_treatment"],
+  "audiovisual_relation": ["motion_phrase_sync", "energy_alignment"],
+  "relation_to_previous": ["action_match", "graphic_match"],
+  "editorial_function": ["redirect_attention", "release_accumulated_tension"],
+  "provenance": {
+    "source_contribution": "pose, facial expression, and base composition",
+    "mad_contribution": "reframing, duration, adjacency, and musical placement",
+    "combined_effect": "the source expression becomes a delayed answer to the preceding image"
+  },
+  "viewer_effect": "The chorus arrives as release rather than a simple increase in speed.",
+  "alternative": "The pause may function only as phrase punctuation.",
+  "confidence": 0.83
+}
+```
+
+For a cluster, set `unit_type` to `shot_cluster` and add `shot_count`, `density_pattern`, `internal_rule`, `internal_exceptions`, and `grouping_reason`. Do not let grouping erase a meaningful subject, relation, or musical change.
+
 ## Event-response-state chain
 
 ```json
